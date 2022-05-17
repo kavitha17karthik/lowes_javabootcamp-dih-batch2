@@ -3,7 +3,7 @@
     public String Name;
     static String schoolname="Presidency";
 }*/
-class Calculator
+class CalculatorCheck
 {
     static int a=10;
     static int b=20;
@@ -27,9 +27,9 @@ public class staticmember {
         //Student student1=new Student();
        // student1.Name="a";
        // System.out.printf("Name "+student1.Name+"school name"+Student.schoolname);
-        Calculator calc=new Calculator();
+        CalculatorCheck calc=new CalculatorCheck();
 
         calc.addNumber();
-        Calculator.subNumber();
+        CalculatorCheck.subNumber();
     }
 }
