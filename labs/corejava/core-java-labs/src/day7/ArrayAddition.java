@@ -10,12 +10,14 @@ public class ArrayAddition {
 
         //addition
         System.out.println("Addiiton....");
-        for(int i=0;i<a.length;i++)
-        {
-            for(int j=0;j<b.length;j++)
-            {
-                c[i][j]=a[i][j]+b[i][j];
+        try {
+            for (int i = 0; i <=a.length; i++) {
+                for (int j = 0; j < b.length; j++) {
+                    c[i][j] = a[i][j] + b[i][j];
+                }
             }
+        }catch(Exception ex){
+            System.out.println(ex.getMessage());
         }
         System.out.println("displaying....");
         for(int i=0;i<a.length;i++)
