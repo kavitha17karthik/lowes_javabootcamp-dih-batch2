@@ -45,14 +45,15 @@ public class Calculator {
                         System.out.println("======================================");
                         break;
                     case 4:
-                        if (num2 == 0) {
-                            System.out.println("division by Zero is not possible..so please enter any number other than zero for num2");
-
-                        } else {
+                       try{
                             System.out.println("======================================");
                             System.out.println("Division of " + num1 + " and " + num2 + " is " + (num1 / num2));
                             System.out.println("======================================");
-                        }
+                        }catch (ArithmeticException ex)
+                       {
+                           System.out.println("\nDivision by Zero Error");
+                           System.out.println(ex.getStackTrace());
+                       }
                         break;
                     default:
                         System.exit(0);
@@ -63,7 +64,7 @@ public class Calculator {
                 String input = sc4.next();
                 if((input.equals("N")) || (input.equals("n"))){
                         loop=false;
-                   }
+                 }
             }
         }
     }

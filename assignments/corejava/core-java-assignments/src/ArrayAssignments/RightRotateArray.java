@@ -28,7 +28,6 @@ public class RightRotateArray {
         for (int i=0;i<arr.length;i++){
             System.out.print(arr[i]+ " ");
         }
-
         System.out.println();
         System.out.println("Enter the number of time array should be right rotated(say. 2 or 3 etc)");
         Scanner sc1=new Scanner(System.in);
