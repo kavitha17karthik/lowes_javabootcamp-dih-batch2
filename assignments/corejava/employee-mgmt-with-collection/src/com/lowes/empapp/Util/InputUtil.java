@@ -18,28 +18,11 @@ public class InputUtil{
     public InputUtil() {
     }
 
-    public static int getInt(Scanner scan) throws NumberFormatException {
-       // int intNumber = 0;
-
-        try {
-            int intNumber = Integer.parseInt(scan.nextLine());
-            return intNumber;
-        } catch (NumberFormatException var3) {
-            throw new NumberFormatException("Please enter the Integer value and try again : ");
-        }
+    public static String getString(Scanner scan) {
+        String string = "";
+        string = scan.nextLine();
+        return string;
     }
-
-    public static double getDouble(Scanner scan) throws NumberFormatException {
-        double doubleNumber = 0.0;
-
-        try {
-            doubleNumber = Double.parseDouble(scan.nextLine());
-            return doubleNumber;
-        } catch (NumberFormatException var4) {
-            throw new NumberFormatException("Please Enter the double value and try again");
-        }
-    }
-
     public static float getFloat(Scanner scan) throws NumberFormatException {
         float floatNumber = 0.0F;
 
@@ -51,25 +34,26 @@ public class InputUtil{
         }
     }
 
-    public static String getString(Scanner scan) {
-        String string = "";
-        string = scan.nextLine();
-        return string;
-    }
-
-    public static Employee getEmployeeData(Scanner scan) {
+    public static Employee getEmployeeData() {
         Employee emp = new Employee();
-        DisplayUtil.displayMessage("Enter the id : ");
-        String mId = getString(scan);
-        emp.setmId(mId);
-        DisplayUtil.displayMessage("Enter the name : ");
-        String employeeName = getString(scan);
+        System.out.println("Enter Employee ID : ");
+        Scanner sc1=new Scanner(System.in);
+        String empId= sc1.nextLine();
+        emp.setmId(empId);
+
+        System.out.println("Enter Employee Name : ");
+        Scanner sc2=new Scanner(System.in);
+        String employeeName = sc2.nextLine();
         emp.setEmployeeName(employeeName);
-        DisplayUtil.displayMessage("Enter the Salary : ");
-        float salary = getFloat(scan);
+
+        System.out.println("Enter the Salary : ");
+        Scanner sc3=new Scanner(System.in);
+        float salary= sc3.nextFloat();
         emp.setSalary(salary);
-        DisplayUtil.displayMessage("Enter the Designation : ");
-        String designation = getString(scan);
+
+        System.out.println("Enter the Designation : ");
+        Scanner sc4=new Scanner(System.in);
+        String designation= sc4.nextLine();
         emp.setDesignation(designation);
 
         return emp;

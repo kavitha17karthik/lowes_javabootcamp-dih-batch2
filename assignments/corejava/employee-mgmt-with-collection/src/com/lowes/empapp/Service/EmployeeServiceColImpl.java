@@ -27,15 +27,15 @@ public class EmployeeServiceColImpl implements com.lowes.empapp.Service.Employee
         return this.arrayList;
     }
 
-    public List<Employee> updateEmployeeArrayList(String mId, float salary) {
+    public List<Employee> updateEmployeeArrayList(String empId, float salary) {
         Iterator var4 = this.arrayList.iterator();
 
         while(var4.hasNext()) {
             Employee emp = (Employee)var4.next();
-            if (emp.getmId().equals(mId)) {
+            if (emp.getmId().equals(empId)) {
                 Employee newTempEmp = new Employee();
                 int position = this.arrayList.indexOf(emp);
-                newTempEmp.setmId(mId);
+                newTempEmp.setmId(empId);
                 newTempEmp.setEmployeeName(emp.getEmployeeName());
                 newTempEmp.setSalary(emp.getSalary());
                 newTempEmp.setDesignation(emp.getDesignation());
@@ -46,13 +46,13 @@ public class EmployeeServiceColImpl implements com.lowes.empapp.Service.Employee
         return this.arrayList;
     }
 
-    public List<Employee> deleteEmployeeArrayList(String mId) {
+    public List<Employee> deleteEmployeeArrayList(String empId) {
         List<Employee> linkedList1 = new LinkedList();
         Iterator var4 = this.arrayList.iterator();
 
         while(var4.hasNext()) {
             Employee emp = (Employee)var4.next();
-            if (!emp.getmId().equals(mId)) {
+            if (!emp.getmId().equals(empId)) {
                 linkedList1.add(emp);
             }
         }
@@ -70,16 +70,16 @@ public class EmployeeServiceColImpl implements com.lowes.empapp.Service.Employee
         return this.linkedList;
     }
 
-    public List<Employee> updateEmployeeLinkedList(String mId, float salary) {
+    public List<Employee> updateEmployeeLinkedList(String empId, float salary) {
         Iterator var4 = this.linkedList.iterator();
 
         while(var4.hasNext()) {
             Employee emp = (Employee)var4.next();
-            if (emp.getmId().equals(mId)) {
+            if (emp.getmId().equals(empId)) {
                 Employee newTempEmp = new Employee();
                 int position = this.linkedList.indexOf(emp);
-                System.out.println("updateEmployeeLinkedList"+ position);
-                newTempEmp.setmId(mId);
+                System.out.println("UpdateEmployeeLinkedList"+ position);
+                newTempEmp.setmId(empId);
                 newTempEmp.setEmployeeName(emp.getEmployeeName());
                 newTempEmp.setSalary(salary);
                 newTempEmp.setDesignation(emp.getDesignation());
@@ -90,12 +90,12 @@ public class EmployeeServiceColImpl implements com.lowes.empapp.Service.Employee
         return this.linkedList;
     }
 
-    public List<Employee> deleteEmployeeLinkedList(String mId) {
+    public List<Employee> deleteEmployeeLinkedList(String empId) {
         Iterator var3 = this.linkedList.iterator();
 
         while(var3.hasNext()) {
             Employee emp = (Employee)var3.next();
-            if (emp.getmId().equals(mId)) {
+            if (emp.getmId().equals(empId)) {
                 int position = this.linkedList.indexOf(emp);
                 this.linkedList.remove(position);
             }

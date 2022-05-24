@@ -62,12 +62,10 @@ public class Employee implements Comparable<Employee> {
                 if (other.mId != null) {
                     return false;
                 }
-            } else if (!this.mId.equals(other.mId)) {
+            } else if (!this.mId.equals(other.mId)) {  //***********HERE*********
                 return false;
             }
-
             if (Float.floatToIntBits(this.salary) != Float.floatToIntBits(other.salary)) {
-
                 return false;
             } else {
                 if (this.designation == null) {
