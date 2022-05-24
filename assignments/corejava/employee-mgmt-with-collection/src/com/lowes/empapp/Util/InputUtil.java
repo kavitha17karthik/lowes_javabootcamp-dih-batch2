@@ -23,12 +23,12 @@ public class InputUtil{
         string = scan.nextLine();
         return string;
     }
-    public static float getFloat(Scanner scan) throws NumberFormatException {
-        float floatNumber = 0.0F;
+    public static int getInt(Scanner scan) throws NumberFormatException {
+        int intNumber = 0;
 
         try {
-            floatNumber = Float.parseFloat(scan.nextLine());
-            return floatNumber;
+            intNumber = scan.nextInt();
+            return intNumber;
         } catch (NumberFormatException var3) {
             throw new NumberFormatException("Please Enter the double value and try again");
         }
@@ -39,7 +39,7 @@ public class InputUtil{
         System.out.println("Enter Employee ID : ");
         Scanner sc1=new Scanner(System.in);
         String empId= sc1.nextLine();
-        emp.setmId(empId);
+        emp.setEmpId(empId);
 
         System.out.println("Enter Employee Name : ");
         Scanner sc2=new Scanner(System.in);
@@ -48,7 +48,7 @@ public class InputUtil{
 
         System.out.println("Enter the Salary : ");
         Scanner sc3=new Scanner(System.in);
-        float salary= sc3.nextFloat();
+        Integer salary= sc3.nextInt();
         emp.setSalary(salary);
 
         System.out.println("Enter the Designation : ");

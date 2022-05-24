@@ -1,21 +1,21 @@
 package com.lowes.empapp.Model;
 
 public class Employee implements Comparable<Employee> {
-    private String mId;
+    private String empId;
     private String employeeName;
     private String designation;
-    private float salary;
+    private Integer salary;
 
 
     public Employee() {
     }
 
-    public String getmId() {
-        return this.mId;
+    public String getEmpId() {
+        return this.empId;
     }
 
-    public void setmId(String mId) {
-        this.mId = mId;
+    public void setEmpId(String mId) {
+        this.empId = mId;
     }
 
     public String getEmployeeName() {
@@ -26,11 +26,11 @@ public class Employee implements Comparable<Employee> {
         this.employeeName = employeeName;
     }
 
-    public float getSalary() {
+    public int getSalary() {
         return this.salary;
     }
 
-    public void setSalary(float salary) {
+    public void setSalary(int salary) {
         this.salary = salary;
     }
     public String getDesignation() {
@@ -41,6 +41,17 @@ public class Employee implements Comparable<Employee> {
         this.designation = designation;
     }
 
+    public int hashCode() {
+        boolean prime = true;
+        int result = 1;
+        result = 31 * result + (this.employeeName == null ? 0 : this.employeeName.hashCode());
+        result = 31 * result + (this.empId == null ? 0 : this.empId.hashCode());
+       //result = 31 * result + Float.floatToIntBits(this.salary);
+        result = 31 * result + (this.salary == null ?0: this.empId.hashCode());
+
+        result = 31 * result + (this.designation == null ? 0 : this.designation.hashCode());
+        return result;
+    }
     public boolean equals(Object obj) {
         if (this == obj) {
             return true;
@@ -58,14 +69,15 @@ public class Employee implements Comparable<Employee> {
                 return false;
             }
 
-            if (this.mId == null) {
-                if (other.mId != null) {
+            if (this.empId == null) {
+                if (other.empId != null) {
                     return false;
                 }
-            } else if (!this.mId.equals(other.mId)) {  //***********HERE*********
+            } else if (!this.empId.equals(other.empId)) {  //***********HERE*********
                 return false;
             }
-            if (Float.floatToIntBits(this.salary) != Float.floatToIntBits(other.salary)) {
+           // if (Float.floatToIntBits(this.salary) != Float.floatToIntBits(other.salary)) {
+            if (this.salary != other.salary) {
                 return false;
             } else {
                 if (this.designation == null) {
@@ -82,11 +94,12 @@ public class Employee implements Comparable<Employee> {
     }
 
     public int compareTo(Employee arg0) {
-        return this.mId.compareTo(arg0.getmId());
+        return this.empId.compareTo(arg0.getEmpId());
     }
 
     public String toString() {
-        return this.mId + "  " + this.employeeName +"   " +  this.salary +"   " + this.designation;
+        System.out.println();
+        return this.empId + "\t  " + this.employeeName +"\t  " +  this.salary +"\t  " + this.designation;
 
     }
 }
