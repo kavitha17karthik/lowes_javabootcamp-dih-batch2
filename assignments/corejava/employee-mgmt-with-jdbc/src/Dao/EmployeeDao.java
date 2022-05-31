@@ -11,11 +11,6 @@ public interface EmployeeDao {
 
     int delete(int var1) throws ClassNotFoundException, SQLException;
 
-   // abstract Employee searchById(int var1) throws ClassNotFoundException, SQLException;
-
     List<Employee> showAll() throws ClassNotFoundException, SQLException;
-
-  //  public static void readFileInfo(Employee var1) throws ClassNotFoundException, SQLException
-
 
 }
