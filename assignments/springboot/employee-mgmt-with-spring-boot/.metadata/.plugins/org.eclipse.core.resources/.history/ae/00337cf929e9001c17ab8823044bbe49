@@ -1,0 +1,17 @@
+package com.labs.spring.boot.service;
+
+import java.util.List;
+
+import com.examples.accservice.exception.AccountException;
+import com.examples.accservice.model.Account;
+import com.labs.spring.boot.model.Employee;
+
+public interface EmployeeService {
+
+    public Employee create(Employee emp) throws EmployeeException;
+    public Employee update(String id,Employee var1);
+    public Employee get(int id);
+    public void delete(String var1);
+    public  List<Employee> showAll() throws Exception;
+
+}

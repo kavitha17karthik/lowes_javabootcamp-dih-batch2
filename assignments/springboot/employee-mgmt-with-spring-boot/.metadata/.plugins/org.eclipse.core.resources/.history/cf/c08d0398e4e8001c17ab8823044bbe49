@@ -1,0 +1,39 @@
+package com.labs.spring.boot.model;
+
+public class ResponseMessage {
+	
+	   String status;
+	    String message;
+
+	    public ResponseMessage()
+	    {
+
+	    }
+	    public ResponseMessage(String status, String message) {
+	        super();
+	        this.status = status;
+	        this.message = message;
+	    }
+
+	    public String getStatus() {
+	        return status;
+	    }
+	    public void setStatus(String status) {
+	        this.status = status;
+	    }
+	    public String getMessage() {
+	        return message;
+	    }
+	    public void setMessage(String message) {
+	        this.message = message;
+	    }
+
+	    public static ResponseMessage responseMessageEntity() {
+	        return new ResponseMessage(HttpStatus.OK.value(),"OK");
+	    }
+
+	    public static ResponseMessage responseMessageError() {
+	        return new ResponseMessage(HttpStatus.NO_CONTENT.value(), "Body must not null");
+	    }
+
+}

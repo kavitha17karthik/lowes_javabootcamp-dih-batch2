@@ -1,0 +1,15 @@
+
+#DataSource configuration
+spring.jpa.hibernate.ddl-auto=create
+spring.jpa.show-sql=true
+spring.datasource.url=jdbc:mysql://localhost:3306/jdbc_training?createDatabaseIfNotExist=true
+spring.datasource.username=training
+spring.datasource.password=training
+
+logging.file=C:/Training/lowes_javabootcamp-dih-batch2/assignments/springboot/employee-mgmt-with-spring-boot/application-debug.log
+logging.level.root=INFO
+#Enabling H2 Web Console
+#spring.h2.console.enabled=true
+
+#Exposing all Actuator endpoints
+management.endpoints.web.exposure.include=*

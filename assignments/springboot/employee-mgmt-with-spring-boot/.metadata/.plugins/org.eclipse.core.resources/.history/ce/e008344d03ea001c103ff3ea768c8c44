@@ -1,0 +1,5 @@
+package com.labs.spring.boot.service;
+
+public class HealthMetrics {
+
+}

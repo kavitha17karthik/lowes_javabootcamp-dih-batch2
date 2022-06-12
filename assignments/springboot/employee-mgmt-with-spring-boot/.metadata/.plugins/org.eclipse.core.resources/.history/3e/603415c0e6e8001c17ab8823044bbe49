@@ -1,0 +1,19 @@
+package com.labs.spring.boot.exception;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.context.request.WebRequest;
+
+public class ExceptionMessageHandler {
+	
+	@ExceptionHandler(EmployeeNotFound.class)
+	public ResponseEntity<?> handleEmployeeNotFoundException
+	(EmployeeNotFound empException, WebRequest request)
+	{
+		ResponseMessage resMsg =new ResponseMessage(empException.getMessage(),request.getDescription(false));
+		return new ResponseEntity(resMsg,HttpStatus.NOT_FOUND);
+		
+	}
+
+}

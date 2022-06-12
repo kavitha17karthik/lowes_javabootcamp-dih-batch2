@@ -1,0 +1,11 @@
+package com.labs.spring.boot.exception;
+
+public class EmployeeFoundMessage extends Exception{
+	public EmployeeFoundMessage(String message) {
+        super(message);
+    }
+    public EmployeeFoundMessage(String message, Throwable cause) {
+        super(message, cause);
+    }
+
+}

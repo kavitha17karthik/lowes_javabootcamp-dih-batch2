@@ -1,0 +1,44 @@
+package com.labs.spring.boot.Endpoints;
+
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.WeakHashMap;
+
+import org.springframework.boot.actuate.endpoint.annotation.Endpoint;
+import org.springframework.boot.actuate.endpoint.annotation.ReadOperation;
+import org.springframework.boot.actuate.health.Health;
+import org.springframework.boot.actuate.health.HealthIndicator;
+import org.springframework.stereotype.Component;
+
+@Component
+public class CustomActuatorEndpoints implements HealthIndicator {
+	
+	@Override
+	public Health health() {
+		try
+		{
+			URL lowesUrl = new URL("https://www.facebook.com");
+			HttpURLConnection conn = (HttpURLConnection) lowesUrl.openConnection();
+			conn.setRequestMethod("GET");
+			conn.connect();
+			int resCode = conn.getResponseCode();
+			if(resCode==200)
+			{
+				return Health.up().build();
+			}
+			else
+			{
+				return Health.down().withDetail("Error","Lowes ServerDown").build();
+			}
+			
+		}catch(Exception e) {
+			return Health.down().withDetail("Error","Server Not Available").build();
+			
+		}
+		
+	}
+
+}
+ 

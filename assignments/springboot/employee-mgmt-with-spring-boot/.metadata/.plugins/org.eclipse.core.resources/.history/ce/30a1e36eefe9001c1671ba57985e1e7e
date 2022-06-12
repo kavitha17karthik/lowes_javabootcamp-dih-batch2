@@ -1,0 +1,36 @@
+package com.labs.spring.boot.Actuator;
+
+import java.util.concurrent.ThreadLocalRandom;
+
+import org.springframework.boot.actuate.health.Health;
+import org.springframework.boot.actuate.health.HealthIndicator;
+import org.springframework.stereotype.Component;
+
+@Component
+public class HealthMetric implements HealthIndicator {
+
+	/*
+	 * @Override public Health health() { return
+	 * Health.down().withDetail("Memory Usage", "Limit reached.").build(); }
+	 */
+	
+
+	/*
+	 * @Override public Health getHealth(boolean includeDetails) { return
+	 * HealthIndicator.super.getHealth(includeDetails); }
+	 * 
+	 * @Override public Health health() { Health health = Health.up().build();
+	 * return health; }
+	 */
+	
+	  double chance = ThreadLocalRandom.current().nextDouble();
+	    Health.Builder status = Health.up();
+	    if (chance > 0.9) {
+	        status = Health.down();
+	    }
+
+	    return status
+	      .withDetail("chance", chance)
+	      .withDetail("strategy", "thread-local")
+	      .build();
+}

@@ -1,0 +1,47 @@
+package com.labs.spring.boot.service;
+
+import java.net.HttpURLConnection;
+import java.net.URL;
+import org.springframework.boot.actuate.health.Health;
+import org.springframework.boot.actuate.health.HealthIndicator;
+import org.springframework.stereotype.Component;
+
+@Component
+public class HealthMetric implements HealthIndicator {
+
+	/*
+	 * @Override public Health health() { return
+	 * Health.down().withDetail("Memory Usage", "Limit reached.").build(); }
+	 */
+	
+
+	/*
+	 * @Override public Health getHealth(boolean includeDetails) { return
+	 * HealthIndicator.super.getHealth(includeDetails); }
+	 * 
+	 * @Override public Health health() { Health health = Health.up().build();
+	 * return health; }
+	 */
+	 @Override public Health health() { 
+	
+	 try
+	 {
+		 int connRes;
+		 URL lowesURL = new URL("https://www.lowes.com");
+		 HttpURLConnection conn = (HttpURLConnection) lowesURL.openConnection();
+		 conn.setRequestMethod("GET");
+		 conn.connect();
+		 connRes=conn.getResponseCode();
+		 if(connRes==200)
+		 {
+			 return Health.up().build();
+		 }
+		 else
+		 {
+			 return Health.down().withDetail("Error","Lowes Server Down").build();
+		 }
+	   }catch(Exception e) {
+			 return Health.down().withDetail("Error", "server Not Avaialble").build();
+		 }
+	}
+}

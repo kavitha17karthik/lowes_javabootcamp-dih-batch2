@@ -1,0 +1,14 @@
+package com.labs.spring.boot.service;
+
+import java.util.List;
+
+import com.labs.spring.boot.model.Employee;
+
+public interface EmployeeService {
+
+    public Employee create(Employee emp) throws Exception;
+    public int update(String id,Employee var1) throws Exception;
+    public int delete(String var1) throws Exception;
+    public  List<Employee> showAll() throws Exception;
+
+}

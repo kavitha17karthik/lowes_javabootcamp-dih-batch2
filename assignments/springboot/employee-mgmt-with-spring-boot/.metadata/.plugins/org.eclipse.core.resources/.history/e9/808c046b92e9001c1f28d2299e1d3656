@@ -1,0 +1,50 @@
+package com.labs.spring.boot.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+
+import com.labs.spring.boot.exception.EmployeeNotFoundException;
+import com.labs.spring.boot.model.Employee;
+import com.labs.spring.boot.repository.EmployeeRepository;
+
+
+@Service
+public class EmployeeServiceImpl implements EmployeeService{
+	
+	@Autowired
+    EmployeeRepository emprepo;
+    
+		
+    @Override
+    public Employee create(Employee employee){
+
+        return emprepo.save(employee);
+    }
+
+    
+    @Override
+    public Employee update(int empId, Employee employee){
+		 return emprepo.save(employee);
+    }
+
+    @Override
+    public void delete(int empId) throws EmployeeNotFoundException{
+    	emprepo.deleteById(empId);
+       
+    }
+
+    @Override
+    public List<Employee> showAll() throws Exception {
+        return emprepo.findAll();
+    }
+
+    @Override
+    public Employee get(int empId)  {
+
+    	return emprepo.findById(empId).get();
+    }
+
+}

@@ -1,0 +1,25 @@
+package com.labs.spring.boot.Actuator;
+
+import org.springframework.boot.actuate.health.Health;
+import org.springframework.boot.actuate.health.HealthIndicator;
+import org.springframework.stereotype.Component;
+
+@Component
+public class HealthMetric implements HealthIndicator {
+
+	/*
+	 * @Override public Health health() { return
+	 * Health.down().withDetail("Memory Usage", "Limit reached.").build(); }
+	 */
+	
+
+	@Override
+    public Health getHealth(boolean includeDetails) {
+        return HealthIndicator.super.getHealth(includeDetails);
+    }
+
+	/*
+	 * @Override public Health health() { Health health = Health.up().build();
+	 * return health; }
+	 */
+}

@@ -1,0 +1,64 @@
+package com.labs.spring.boot.service;
+
+import java.util.List;
+import java.util.NoSuchElementException;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.labs.spring.boot.controller.EmployeeController;
+import com.labs.spring.boot.exception.EmployeeNotFoundException;
+import com.labs.spring.boot.model.Employee;
+import com.labs.spring.boot.repository.EmployeeRepository;
+
+
+@Service
+public class EmployeeServiceImpl implements EmployeeService{
+	
+	@Autowired
+    EmployeeRepository emprepo;
+	
+	Logger loggerService = LoggerFactory.getLogger(EmployeeServiceImpl.class); 
+    
+		
+    @Override
+    public Employee create(Employee employee){
+
+        return emprepo.save(employee);
+    }
+
+    
+    @Override
+    public Employee update(int empId, Employee employee){
+		 return emprepo.save(employee);
+    }
+
+    @Override
+    public void delete(int empId) throws EmployeeNotFoundException{
+    	emprepo.deleteById(empId);
+       
+    }
+
+    @Override
+    public List<Employee> showAll() throws Exception {
+        return emprepo.findAll();
+    }
+
+    @Override
+    public Employee get(int empId) throws NoSuchElementException{
+    	
+    	Employee emp= emprepo.findById(empId).get();
+    	loggerService.info("Inside loggerService - Get");
+    	
+    	if(emp!=null){
+    		loggerService.info("EmployeeServiceImpl - Employee found -  Get");
+    		return emp;
+    	}else {
+    		loggerService.info("EmployeeServiceImpl - Employee Not found - Get");
+    		throw new NoSuchElementException("Employee with"+ empId +"not found in the Database");
+    	}
+    }
+
+}

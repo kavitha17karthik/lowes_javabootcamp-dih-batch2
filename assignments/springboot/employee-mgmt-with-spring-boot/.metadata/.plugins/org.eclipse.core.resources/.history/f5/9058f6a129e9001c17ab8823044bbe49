@@ -1,0 +1,49 @@
+package com.labs.spring.boot.service;
+
+public class EmployeeServiceImpl {
+	
+
+    @Autowired
+    public EmployeeRespositoryImpl emprepo;
+
+    
+    @Override
+    public Employee create(Employee employee){
+
+        return emprepo.save(employee);
+    }
+
+    @Override
+    public int update(String empId, Employee employee){
+		/*
+		 * int update=0; Employee found = employeeDao.get(empId); if ((found != null) ||
+		 * (empId == found.getId())) { update = employeeDao.update(empId,employee);
+		 * 
+		 * } else { // employees.put(employee.getId(), employee); throw new
+		 * EmployeeNotExisting("Employee with id: " + empId + " not found."); }
+		 */
+        return emprepo.save(employee);
+    }
+
+    @Override
+    public void delete(String empId){
+		/*
+		 * Employee found = employeeDao.get(empId); if (found != null) {
+		 * employeeDao.delete(empId); } else { throw new
+		 * EmployeeNotExisting("Employee with id: " + empId + " not found."); }
+		 */
+    	emprepo.delete(empId);
+        return 0;
+    }
+
+    @Override
+    public List<Employee> showAll() throws Exception {
+        return emprepo.findAll();
+    }
+
+    public Employee get(String empId)   {
+
+    	return emprepo.findById(id).get();
+    }
+
+}

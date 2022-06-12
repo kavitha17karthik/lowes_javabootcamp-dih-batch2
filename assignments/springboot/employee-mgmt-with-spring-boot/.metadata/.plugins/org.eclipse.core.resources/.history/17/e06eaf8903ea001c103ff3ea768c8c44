@@ -1,0 +1,41 @@
+package com.labs.spring.boot.service;
+
+import java.net.HttpURLConnection;
+import java.net.URL;
+
+import org.springframework.boot.actuate.health.Health;
+import org.springframework.boot.actuate.health.HealthIndicator;
+import org.springframework.stereotype.Component;
+
+@Component
+public class HealthMetrics implements HealthIndicator{
+
+	@Override
+	public Health health() {
+		try
+		{
+			URL	lowesURL=new URL("https://www.lowes.com");
+			HttpURLConnection conn = (HttpURLConnection)lowesURL.openConnection();
+			conn.setRequestMethod("GET");
+			conn.connect();
+			int resCode = conn.getResponseCode();
+			if(resCode==200) //Connection established
+			{
+				return Health.up().build();
+			}
+			else
+			{
+				return Health.down().withDetail("Connection Error", "ServerDown").build();
+				
+			}
+			
+		}catch(Exception e) {
+			return Health.down().withDetail("Error", "server Not Available").build();
+		}
+		
+		
+	}
+	
+	
+
+}

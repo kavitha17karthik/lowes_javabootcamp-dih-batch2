@@ -1,0 +1,79 @@
+package com.labs.spring.boot.controller;
+
+import java.net.URI;
+
+import java.util.List;
+import javax.validation.Valid;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
+
+import com.labs.spring.boot.exception.EmployeeNotFoundException;
+import com.labs.spring.boot.exception.ResponseMessage;
+import com.labs.spring.boot.model.Employee;
+import com.labs.spring.boot.service.EmployeeService;
+
+@RestController
+@RequestMapping(value = "/employee")
+public class EmployeeController {
+	
+	Logger logger = LoggerFactory.getLogger(EmployeeController.class);
+	
+	
+	@Autowired
+	EmployeeService empService;
+
+	// Create Employee
+	@PostMapping(consumes = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE},produces = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE})
+	public ResponseEntity<ResponseMessage> create(@RequestBody @Valid Employee employee) throws Exception {
+			
+			logger.info("Creating Employee");
+			empService.create(employee);
+			URI location = ServletUriComponentsBuilder.fromCurrentRequest().build().toUri(); 
+			ResponseMessage response = new ResponseMessage("Success","Employee created successfully");			
+			return ResponseEntity.created(location).body(response);
+		}
+
+	@GetMapping
+	public  ResponseEntity<List<Employee>> showAll() throws Exception {
+		logger.info("Showing All Employee Details");
+		return ResponseEntity.ok(empService.showAll());
+	}
+
+	@RequestMapping(method = RequestMethod.PUT, path = "/{id}", produces = {MediaType.APPLICATION_JSON_VALUE,MediaType.APPLICATION_XML_VALUE}, consumes = {MediaType.APPLICATION_JSON_VALUE,MediaType.APPLICATION_XML_VALUE})
+	public ResponseEntity<String> update(@PathVariable("id") int empId, @RequestBody @Valid Employee emp) throws Exception{
+		
+		Employee updateEmp = empService.update(empId, emp);		
+		logger.info("Employee Updated : " + updateEmp.getName());
+		return ResponseEntity.ok().body("Employee Information updated successfully");		
+		
+	}
+
+	@GetMapping(path = "/{id}", produces = { MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE })
+	public ResponseEntity<Employee> get(@PathVariable int id) throws EmployeeNotFoundException{
+		logger.info("Entered Employee get - Controller");		
+			return ResponseEntity.ok(empService.get(id));
+		
+	}
+		
+	@RequestMapping(method = RequestMethod.DELETE, path = "/{id}")
+	//@PutMapping("/{id}")
+	public ResponseEntity<String> delete(@PathVariable("id") int empId){
+		
+		empService.delete(empId);		
+		return ResponseEntity.ok().body("Employee Record is Deleted Successfully");
+	}
+
+}
