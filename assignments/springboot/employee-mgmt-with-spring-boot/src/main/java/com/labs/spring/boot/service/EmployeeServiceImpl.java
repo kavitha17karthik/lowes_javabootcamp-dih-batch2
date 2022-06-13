@@ -1,13 +1,17 @@
 package com.labs.spring.boot.service;
 
+import java.sql.SQLException;
+
 import java.util.List;
 import java.util.NoSuchElementException;
 
+import org.hibernate.exception.JDBCConnectionException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.labs.spring.boot.exception.CannotCreateTransactionException;
 import com.labs.spring.boot.exception.EmployeeNotFoundException;
 import com.labs.spring.boot.model.Employee;
 import com.labs.spring.boot.repository.EmployeeRepository;
@@ -21,13 +25,21 @@ public class EmployeeServiceImpl implements EmployeeService {
 	Logger logger = LoggerFactory.getLogger(EmployeeServiceImpl.class);
 
 	@Override
-	public Employee create(Employee employee) {
-		return emprepo.save(employee);
+	public Employee create(Employee employee) throws CannotCreateTransactionException{
+			//return emprepo.save(employee);
+		Employee emp = emprepo.save(employee);
+		if(emp==null)
+			throw new CannotCreateTransactionException("Database Error");
+		else			
+			return emp;	
+		
 	}
 
 	@Override
 	public Employee update(int empId, Employee employee) {
+		
 		return emprepo.save(employee);
+	
 	}
 
 	@Override
@@ -52,7 +64,8 @@ public class EmployeeServiceImpl implements EmployeeService {
 		  
 		  if(emp!=null) { logger.info("EmployeeServiceImpl(GetId) - Employee found  ");
 		  return emp; } else {
-		  logger.info("EmployeeServiceImpl(GetId) - Employee Not Found "); throw new
+		  logger.info("EmployeeServiceImpl(GetId) - Employee Not Found ");
+		   throw new
 		  EmployeeNotFoundException("Employee with"+ empId
 		  +"not found in the Database"); }
 		 */

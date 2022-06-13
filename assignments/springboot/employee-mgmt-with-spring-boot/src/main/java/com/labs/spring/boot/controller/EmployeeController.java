@@ -1,10 +1,11 @@
 package com.labs.spring.boot.controller;
 
 import java.net.URI;
-
+import java.sql.SQLException;
 import java.util.List;
 import javax.validation.Valid;
 
+import org.hibernate.exception.JDBCConnectionException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,6 +21,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
+import com.labs.spring.boot.exception.CannotCreateTransactionException;
 import com.labs.spring.boot.exception.EmployeeNotFoundException;
 import com.labs.spring.boot.exception.ResponseMessage;
 import com.labs.spring.boot.model.Employee;
@@ -30,15 +32,15 @@ import com.labs.spring.boot.service.EmployeeService;
 public class EmployeeController {
 	
 	Logger logger = LoggerFactory.getLogger(EmployeeController.class);
-	
+		
 	
 	@Autowired
 	EmployeeService empService;
 
-	// Create Employee
+	// Create Employee - JDBCConnectionException
 	@PostMapping(consumes = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE},produces = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE})
-	public ResponseEntity<ResponseMessage> create(@RequestBody @Valid Employee employee) throws Exception {
-			
+	public ResponseEntity<ResponseMessage> create(@RequestBody @Valid Employee employee) throws CannotCreateTransactionException {
+
 			logger.info("Creating Employee");
 			empService.create(employee);
 			URI location = ServletUriComponentsBuilder.fromCurrentRequest().build().toUri(); 
