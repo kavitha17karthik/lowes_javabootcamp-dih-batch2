@@ -62,32 +62,32 @@ public class EmployeeServiceImpl implements EmployeeService {
     }
     public Employee checkEmployeeData(Employee employee)
     {
-        List<String> errors = new ArrayList<>();
+        List<String> inputErr = new ArrayList<>();
         if(StringUtils.isNullOrEmpty(employee.getName())) {
             System.out.println("Name field cannot be empty/null");
-            errors.add("Name field cannot be empty/null");
+            inputErr.add("Name field cannot be empty/null");
         }
         if (employee.getAge() <= 0 || StringUtils.isNullOrEmpty(String.valueOf(employee.getAge()))) {
-            errors.add("Age should not be Null/Empty");
+            inputErr.add("Age should not be Null/Empty");
         }
 
         // validate age
         if (!validate(employee, (emp) -> emp.getAge() >= 21 && emp.getAge() <= 60)) {
-            errors.add("Enter age > 20 and < 60 : ");
+            inputErr.add("Enter age > 20 and < 60 : ");
         }
 
         if (StringUtils.isNullOrEmpty(employee.getDesignation())) {
-            errors.add("Designation should not be empty/null");
+            inputErr.add("Designation should not be empty/null");
         }
         if (StringUtils.isNullOrEmpty(employee.getDepartment())) {
-            errors.add("Department should not be empty/null");
+            inputErr.add("Department should not be empty/null");
         }
         if (StringUtils.isNullOrEmpty(employee.getCountry())) {
-            errors.add("Country should not be empty/null");
+            inputErr.add("Country should not be empty/null");
         }
 
-        if (!errors.isEmpty()) {
-            throw new EmployeeCheckValidationException(errors);
+        if (!inputErr.isEmpty()) {
+            throw new EmployeeCheckValidationException(inputErr);
         }
         return employee;
     }

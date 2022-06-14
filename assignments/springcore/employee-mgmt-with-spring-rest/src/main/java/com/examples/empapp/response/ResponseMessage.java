@@ -7,7 +7,7 @@ import java.util.List;
 public class ResponseMessage {
     String status;
     String message;
-    List<String> errors;
+    List<String> inputErr;
     public ResponseMessage()
     {
 
@@ -31,13 +31,13 @@ public class ResponseMessage {
     }
     public ResponseMessage(String status, List<String> errors) {
         this.status = status;
-        this.errors = errors;
+        this.inputErr = errors;
     }
     public List<String> getErrors() {
-        return errors;
+        return inputErr;
     }
-    public void setErrors(List<String> errors) {
-        this.errors = errors;
+    public void setErrors(List<String> err) {
+        this.inputErr = err;
     }
 
 }
