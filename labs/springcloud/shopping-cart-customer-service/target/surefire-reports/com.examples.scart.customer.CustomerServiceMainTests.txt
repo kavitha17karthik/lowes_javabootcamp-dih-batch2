@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.examples.scart.customer.CustomerServiceMainTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.933 s - in com.examples.scart.customer.CustomerServiceMainTests

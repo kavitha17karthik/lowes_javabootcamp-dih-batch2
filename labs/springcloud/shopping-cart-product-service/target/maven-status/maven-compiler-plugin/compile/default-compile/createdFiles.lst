@@ -1,0 +1,5 @@
+com\examples\scart\product\model\Product.class
+com\examples\scart\product\repository\ProductRepository.class
+com\examples\scart\product\controller\ProductServiceController.class
+com\examples\scart\product\ProductServiceMain.class
+com\examples\scart\product\service\ProductService.class

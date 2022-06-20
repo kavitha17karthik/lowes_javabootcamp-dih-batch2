@@ -1,0 +1,3 @@
+com\examples\spring\boot\kafka\KafkaProducerConfig.class
+com\examples\spring\boot\kafka\Greeting.class
+com\examples\spring\boot\kafka\SpringBootKafkaProducerApplication.class
