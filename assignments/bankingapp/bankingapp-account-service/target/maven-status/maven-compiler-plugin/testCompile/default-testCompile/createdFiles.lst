@@ -1,0 +1,4 @@
+com\examples\bankingapp\account\controller\AccountServiceControllerTests.class
+com\examples\bankingapp\account\AccountServiceMainTests.class
+com\examples\bankingapp\account\controller\AccountServiceIntegrationTest.class
+com\examples\bankingapp\account\service\AccountServiceTests.class
