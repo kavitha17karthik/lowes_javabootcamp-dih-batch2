@@ -1,0 +1,101 @@
+{
+    "storeCart": {
+        "cartId": "6960209587791152889",
+        "itemCount": 1,
+        "cartSummary": {
+            "subTotal": 44.35,
+            "grandTotal": 47.34,
+            "totalTax": 2.99,
+            "totalSaving": 0.00,
+            "totalMarkDownSaving": 0.00,
+            "totalFees": 0.00,
+            "remainingOrderBalance": 47.34,
+            "totalUnlockSaving": 0.00,
+            "subTotalWithFees": 44.35,
+            "shippingTax": 0.00
+        },
+        "customerSegments": [
+            "REGULAR"
+        ],
+        "users": [
+            {
+                "poRequired": false,
+                "valPropEnabled": false,
+                "userType": "SHOPPER",
+                "taxExempt": false,
+                "taxExemptOptIn": true
+            }
+        ],
+        "cartType": "SHOPPING",
+        "createdOn": "2022-11-10T11:22:25Z",
+        "cartItems": [
+            {
+                "cartItemId": "166807934523610426115",
+                "fulfillments": [
+                    {
+                        "fulfillmentId": "1",
+                        "fulfillmentType": "CARRYWITH",
+                        "fulfillmentNode": "6339",
+                        "availabilityTime": "2022-11-10T11:22:30Z",
+                        "availableStatus": true,
+                        "selected": true
+                    }
+                ],
+                "promotions": [],
+                "quantity": 1,
+                "taxExemptions": [],
+                "additionalServices": {},
+                "itemSummary": {
+                    "discount": 0.00,
+                    "markDownSaving": 0.00,
+                    "subTotal": 44.35,
+                    "subTotalAfterDisc": 44.35,
+                    "salesTax": 2.99,
+                    "fees": [],
+                    "totalPrice": 47.34,
+                    "unlockDiscount": 0.00,
+                    "totalSavings": 0.00,
+                    "totalSavingsByUnit": 0.00,
+                    "serviceTotal": 0.00
+                },
+                "priceInfo": {
+                    "prices": [
+                        {
+                            "type": "BASE",
+                            "value": 44.35
+                        },
+                        {
+                            "type": "FINAL",
+                            "value": 44.35
+                        },
+                        {
+                            "type": "RETAIL",
+                            "value": 44.35
+                        }
+                    ],
+                    "priceType": 1,
+                    "totalPercentage": 0.0
+                },
+                "productInfo": {
+                    "omniItemId": "3602798",
+                    "productDescription": "7/16-in x 4-ft x 8-ft OSB Sheathing",
+                    "shortDescription": "7/16 CAT OSB SHEATHING",
+                    "itemNumber": "12212",
+                    "model": "13287",
+                    "itemType": "RGL",
+                    "vendor": "132",
+                    "imageUrl": "https://images.lowes.com/product/converted/088991/088991550315.jpg",
+                    "brand": "Unbranded",
+                    "interpackCode": "EA",
+                    "confirmQuantity": false,
+                    "unlockablePrice": true,
+                    "unlockableQty": true,
+                    "unlockNursery": false
+                },
+                "maxReturnableQty": 0,
+                "isLiveGood": false
+            }
+        ]
+    },
+    "fulfillmentConsolidation": {}
+}

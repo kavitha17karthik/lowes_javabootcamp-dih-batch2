@@ -1,0 +1,17 @@
+{
+  "nextAction":"tenderStart",
+  "status":"Authorized",
+  "statusDetails":{
+     "LastTender":{
+        "TenderType":"Cash",
+        "TenderAmt":"10",
+        "CardNbr":"",
+        "authCd":""
+     },
+     "Tender":{
+        "TotalAmount":"106",
+        "AmountOwed":"96",
+        "Change":"0"
+     }
+  }
+}

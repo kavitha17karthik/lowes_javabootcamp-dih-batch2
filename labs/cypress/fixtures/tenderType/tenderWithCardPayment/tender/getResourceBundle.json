@@ -1,0 +1,176 @@
+{
+  "resourcebundle": [
+    {
+      "code": "RECALLED",
+      "title": "Recalled Item",
+      "message": "Not available for purchase on mobile device. Item not added to cart."
+    },
+    {
+      "code": "RESALE",
+      "title": "Resale Item",
+      "message": "Not available for purchase on mobile device. Item not added to cart."
+    },
+    {
+      "code": "FRT_ITEM",
+      "title": "Freight Item",
+      "message": "Not available for purchase on mobile device. Item not added to cart."
+    },
+    {
+      "code": "SOS",
+      "title": "Special Order Item",
+      "message": "Not available for purchase on mobile device. Item not added to cart."
+    },
+    {
+      "code": "PHON_ITEM",
+      "title": "Gift Card/Phone Card",
+      "message": "Not available for purchase on mobile device. Item not added to cart."
+    },
+    {
+      "code": "WEX",
+      "title": "Special Order Express Item",
+      "message": "Please scan item."
+    },
+    {
+      "code": "NO_WEX",
+      "title": "Special Order Express Item",
+      "message": "Not available for purchase on mobile device. Item not added to cart."
+    },
+    {
+      "code": "NON",
+      "title": "Non-Stock Item",
+      "message": "Not available for purchase on mobile device."
+    },
+    {
+      "code": "ASSOC",
+      "title": "Associated Item",
+      "message": "Not available for purchase on mobile device."
+    },
+    {
+      "code": "PSE",
+      "title": "Pseudo Item",
+      "message": "Not available for purchase on mobile device. Item not added to cart."
+    },
+    {
+      "code": "COUP_ITEM",
+      "title": "Coupon Not Added",
+      "message": "Present coupon to cashier."
+    },
+    {
+      "code": "GIFT_CARD",
+      "title": "Gift Card",
+      "message": "Not available for purchase on mobile device. Item not added to cart."
+    },
+    {
+      "code": "DLV_ITEM",
+      "title": "Delivery Item",
+      "message": "Not available for purchase on mobile device. Item not added to cart."
+    },
+    {
+      "code": "ONE_FOOT",
+      "title": "One Foot Item",
+      "message": "Enter quantity in feet."
+    },
+    {
+      "code": "PAINT_ITEM",
+      "title": "Paint Item",
+      "message": "Please scan or enter the Paint Formula ID Barcode."
+    },
+    {
+      "code": "MISC_ITEM",
+      "title": "Miscellaneous Item",
+      "message": "Transaction must be processed at the register."
+    },
+    {
+      "code": "AGE",
+      "title": "Age Verification Required",
+      "message": "Is customer the appropriate age to purchase this item?"
+    },
+    {
+      "tenderCurrencies": [
+        { "currCode": "USA_CURR", "currValue": "USD" },
+        { "currCode": "CANADA_CURR", "currValue": "CAD" }
+      ]
+    }
+  ],
+  "unlockReasons": [
+    {
+      "reasonNumber": 1,
+      "reasonReturnCode": 2,
+      "reasonText": "Damaged / Clearance"
+    },
+    { "reasonNumber": 2, "reasonReturnCode": 8, "reasonText": "Quoted Price" },
+    {
+      "reasonNumber": 3,
+      "reasonReturnCode": 5,
+      "reasonText": "Competitor Price"
+    },
+    {
+      "reasonNumber": 4,
+      "reasonReturnCode": 1,
+      "reasonText": "Incorrect Price"
+    },
+    {
+      "reasonNumber": 5,
+      "reasonReturnCode": 9,
+      "reasonText": "Promotion / Coupon"
+    },
+    {
+      "reasonNumber": 6,
+      "reasonReturnCode": 11,
+      "reasonText": "Administrative"
+    }
+  ],
+  "omniaCkoutConfig": {
+    "tempPassEnabled": 0,
+    "OmniaClientLogging": 1,
+    "gcActivationNoPIN": 1,
+    "merchManualEntryEnabled": 1,
+    "apiDachiLogging": 0,
+    "isForgnCashTndrEnbld": 1,
+    "charityDonation": 1,
+    "plBufferDays": 1,
+    "charityDonationText": "Does the customer want to donate the $## to support the Habitat for Humanity?",
+    "LBRPaymentOnAccount": 0,
+    "omniaCreditAccountLookup": ["LAR", "LAC", "LBA"],
+    "enablePharos": 1
+  },
+  "nScoBagItem": "12452",
+  "sellingInNegative": {
+    "stock": {},
+    "sos": {},
+    "wex": {},
+    "exclude_vendor": [
+      "100452",
+      "108007",
+      "108003",
+      "108008",
+      "108409",
+      "108421",
+      "108424",
+      "108423",
+      "108422",
+      "108427",
+      "108425",
+      "108426",
+      "108446",
+      "108440",
+      "108442",
+      "108443",
+      "108439",
+      "108434",
+      "108436",
+      "108435",
+      "108445",
+      "108433",
+      "108432",
+      "108437",
+      "108441",
+      "108444",
+      "108438",
+      "108665",
+      "108663",
+      "108664",
+      "112833"
+    ]
+  }
+}

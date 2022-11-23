@@ -1,0 +1,10 @@
+{
+  "status": "Initialized",
+  "nextAction": "continue",
+  "statusDetails": {
+    "masterInvNbr": "99748451",
+    "invoiceNbr": "99005",
+    "total": "106",
+    "giftCardPin": "8117"
+  }
+}

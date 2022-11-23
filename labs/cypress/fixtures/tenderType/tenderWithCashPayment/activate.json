@@ -1,0 +1,9 @@
+{
+  "status": 200,
+  "paymentModes": [
+    {
+      "paymentMode": "CASH",
+      "activated": true
+    }
+  ]
+}

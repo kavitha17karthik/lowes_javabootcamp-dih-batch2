@@ -1,0 +1,29 @@
+{
+  "storeCart": {
+    "cartId": "6988047175273477277",
+    "payments": [
+      {
+        "paymentId": "166608033841335541009",
+        "encryptedCardNumber": "6044099000065682",
+        "amount": 44.97,
+        "cardType": "LAR",
+        "attachedTime": "2022-10-18T08:05:38Z",
+        "gcBalance": 0.0,
+        "expirationMonth": 12,
+        "expirationYear": 2099,
+        "accountType": "CREDIT",
+        "track2Data": "6044099000065682=99121318000190000000",
+        "poNumberRequired": false,
+        "addingCard": false,
+        "savedCard": false,
+        "invoiceNumber": "93288",
+        "authorizationCode": "ZZZZZZ",
+        "entryMethod": "2",
+        "posEntryMode": "02",
+        "cash": false
+      }
+    ],
+    "paymentStatus": "Approved",
+    "masterInvoice": "802935236"
+  }
+}

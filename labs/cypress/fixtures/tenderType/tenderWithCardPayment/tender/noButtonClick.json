@@ -1,0 +1,13 @@
+{
+  "status": "dataNeeded",
+  "nextAction": "continue",
+  "statusDetails": {
+    "msgType": "ConfirmEmail",
+    "msg": "ENTER CUSTOMER EMAIL ID",
+    "responseType": "jsonRqstDtls",
+    "dataRequired": [
+      { "dataNeeded": "emailId", "dataType": "string", "optional": true }
+    ]
+  },
+  "requestId": "8"
+}

@@ -1,0 +1,139 @@
+{
+  "storeCart": {
+    "cartId": "6988047175273477277",
+    "itemCount": 1,
+    "cartSummary": {
+      "subTotal": 44.35,
+      "grandTotal": 44.97,
+      "totalTax": 2.84,
+      "totalSaving": 2.22,
+      "totalMarkDownSaving": 0.0,
+      "totalFees": 0.0,
+      "remainingOrderBalance": 0.0,
+      "totalUnlockSaving": 0.0,
+      "subTotalWithFees": 44.35
+    },
+    "lowesCardOption": [
+      {
+        "lowesCardOptionName": "% OFF CREDIT PROMOTION-VAL PROP-US",
+        "tnCRequired": false,
+        "promoType": "LAR_PERCENT",
+        "promoGroupCode": "OrderLevelPromotion",
+        "selected": true,
+        "status": "APPLIED",
+        "identifier": "LARPercentPromo",
+        "amountSaved": 2.22,
+        "promotionId": "CMS_LAR_1677",
+        "financeType": 0
+      }
+    ],
+    "customerSegments": ["REGULAR"],
+    "users": [
+      {
+        "poRequired": false,
+        "valPropEnabled": false,
+        "taxExempt": false,
+        "taxExemptOptIn": true
+      }
+    ],
+    "payments": [
+      {
+        "paymentId": "166608033841335541009",
+        "encryptedCardNumber": "6044099000065682",
+        "amount": 44.97,
+        "cardType": "LAR",
+        "transactionType": "REGULAR",
+        "attachedTime": "2022-10-18T08:05:38Z",
+        "gcBalance": 0.0,
+        "expirationMonth": 12,
+        "expirationYear": 2099,
+        "accountType": "CREDIT",
+        "track2Data": "6044099000065682=99121318000190000000",
+        "poNumberRequired": false,
+        "addingCard": false,
+        "savedCard": false,
+        "invoiceNumber": "93288",
+        "authorizationCode": "ZZZZZZ",
+        "entryMethod": "2",
+        "posEntryMode": "02",
+        "posIdentificationCode": "1",
+        "cash": false
+      }
+    ],
+    "masterInvoice": "802935236",
+    "sourceId": "001008226335802935236",
+    "pmlReceiptTemplate": "<template>    <logo/>    <emptyline/>    <line>LOWE'S HOME CENTERS, LLC</line>    <line>1041 CHARLOTTE HIGHWAY</line>    <line>TROUTMAN, NC 28166   (704) 980-5000</line>    <emptyline/>        <line fontSize='large' fontType='normal'>- SALE -</line>    <line>SALES#: FSTLAN04 13  TRANS#: 802935236 10-18-22</line>    <emptyline/>                            <line>  12212 7/16 CAT OSB SHEATHING      42.13   </line>                        <line>44.35    DISCOUNT EACH       -2.22</line>    <emptyline/>        <line>                SUBTOTAL:           42.13</line>        <line>                     TAX:            2.84</line>        <line>    INVOICE 93288  TOTAL:           44.97</line>        <line>                     LAR:           44.97</line>    <emptyline/>    <line fontSize='large' fontType='normal'>TOTAL DISCOUNT:      2.22</line>                <line>LAR: XXXXXXXXXXXX5682 AMOUNT: 44.97 AUTHCD: ZZZZZZ</line><emptyline/>       <line>  ACCOUNT WILL BE BILLED UPON MERCHANDISE TRANSACTION   </line>       <line>  DATE FOR STOCK MERCHANDISE AND NO LATER THAN 90 DAYS  </line>       <line>    FROM TRANSACTION DATE FOR SOS OR DIRECT DELIVERY    </line>       <line>                      MERCHANDISE.                      </line>    <line fontSize='small' fontType='bold'> STORE: 6335  TERMINAL: 99   10/18/22 04:06:22    </line><line fontSize='large' fontType='normal'> # OF ITEMS PURCHASED:    1</line><line>    EXCLUDES FEES, SERVICES AND SPECIAL ORDER ITEMS     </line><emptyline/><barcode>633510182022932880000000</barcode><line>             THANK YOU FOR SHOPPING LOWE'S.             </line><line>        FOR DETAILS ON OUR RETURN POLICY, VISIT         </line><line>                   LOWES.COM/RETURNS                    </line><line>    A WRITTEN COPY OF THE RETURN POLICY IS AVAILABLE    </line><line>              AT OUR CUSTOMER SERVICE DESK              </line><emptyline/><line>                  LOWE'S PRICE PROMISE                  </line><line>     FOR MORE DETAILS, VISIT LOWES.COM/PRICEPROMISE     </line><line>********************************************************</line><line>*                 SHARE YOUR FEEDBACK!                 *</line><line fontSize='small' fontType='bold'>*               ENTER FOR A CHANCE TO BE               *</line><line fontSize='small' fontType='bold'>*       ONE OF FIVE $500 WINNERS DRAWN MONTHLY!        *</line><line>*             iENTRE EN EL SORTEO MENSUAL              *</line><line>*     PARA SER UNO DE LOS CINCO GANADORES DE $500!     *</line><line>*                                                      *</line><line>*          ENTER BY COMPLETING A SHORT SURVEY          *</line><line>*       WITHIN ONE WEEK AT: www.lowes.com/survey       *</line><line>*           Y O U R   I D #932889 633582 914691        *</line><line>*                                                      *</line><line>*        NO PURCHASE NECESSARY TO ENTER OR WIN.        *</line><line>* VOID WHERE PROHIBITED. MUST BE 18 OR OLDER TO ENTER. *</line><line>*  OFFICIAL RULES &amp; WINNERS AT:  www.lowes.com/survey  *</line><line>********************************************************</line><line fontSize='small' fontType='bold'>    STORE: 6335     TERMINAL: 99   10/18/22 04:06:23    </line>    <emptyline/>    <cutPaper/></template>",
+    "cartType": "SHOPPING",
+    "terminalNumber": "99",
+    "associateId": "FSTLAN04",
+    "createdOn": "2022-10-18T08:04:38Z",
+    "cartItems": [
+      {
+        "cartItemId": "16660802782800564040",
+        "fulfillments": [
+          {
+            "fulfillmentId": "1",
+            "fulfillmentType": "CARRYWITH",
+            "fulfillmentNode": "6335",
+            "availabilityTime": "2022-10-18T08:06:22Z"
+          }
+        ],
+        "promotions": [
+          {
+            "promotionId": "CMS_LAR_1677",
+            "promotionGroupCode": "OrderLevelPromotion",
+            "discount": 2.22
+          }
+        ],
+        "quantity": 1,
+        "taxExemptions": [],
+        "title": "7/16-in x 4-ft x 8-ft OSB Sheathing",
+        "additionalServices": {},
+        "itemSummary": {
+          "discount": 0.0,
+          "markDownSaving": 0.0,
+          "subTotal": 44.35,
+          "subTotalAfterDisc": 44.35,
+          "fees": [],
+          "totalPrice": 47.19,
+          "unlockDiscount": 0.0,
+          "totalSavings": 2.22,
+          "totalSavingsByUnit": 2.22
+        },
+        "priceInfo": {
+          "prices": [
+            { "type": "RETAIL", "value": 44.35 },
+            { "type": "BASE", "value": 44.35 },
+            { "type": "FINAL", "value": 44.35 }
+          ],
+          "priceType": 1,
+          "saveComponents": []
+        },
+        "productInfo": {
+          "omniItemId": "3602798",
+          "productDescription": "7/16-in x 4-ft x 8-ft OSB Sheathing",
+          "shortDescription": "7/16 CAT OSB SHEATHING",
+          "itemNumber": "12212",
+          "model": "13287",
+          "itemType": "RGL",
+          "vendor": "132",
+          "imageUrl": "https://images.lowes.com/product/converted/088991/088991550315.jpg",
+          "brand": "Unbranded",
+          "barCode": "088991550315",
+          "paintFormulaCode": "NO FORMULA",
+          "interpackCode": "EA",
+          "confirmQuantity": false,
+          "unlockablePrice": false,
+          "unlockableQty": false,
+          "unlockNursery": false
+        },
+        "terminalNumber": "99",
+        "itemEntryMethod": "0",
+        "invoiceNumber": "93288",
+        "maxReturnableQty": 0,
+        "isLiveGood": false
+      }
+    ],
+    "salesman": { "name": " ", "number": "13" }
+  }
+}

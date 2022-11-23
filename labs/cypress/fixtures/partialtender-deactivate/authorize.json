@@ -1,0 +1,34 @@
+{
+  "storeCart": {
+    "cartId": "7000671199920445462",
+    "payments": [
+      {
+        "paymentId": "1669090200610781621",
+        "encryptedCardNumber": "4761731397090011",
+        "amount": 42.34,
+        "cardType": "VISA",
+        "attachedTime": "2022-11-22T04:10:00Z",
+        "gcBalance": 0.0,
+        "cardToken": "476173BWKJGQ0011",
+        "expirationMonth": 12,
+        "expirationYear": 2024,
+        "accountType": "CREDIT",
+        "track2Data": "4761731060011=2412201B964kY4Zi/Kca9eg",
+        "poNumberRequired": false,
+        "addingCard": false,
+        "savedCard": false,
+        "invoiceNumber": "77488",
+        "authorizationCode": "007039",
+        "entryMethod": "5",
+        "posEntryMode": "05",
+        "emvApplicationLabel": "Visa Credit",
+        "emvTsi": "6800",
+        "emvAid": "a0000000031010",
+        "emvTvr": "8080048800",
+        "cash": false
+      }
+    ],
+    "paymentStatus": "Approved",
+    "masterInvoice": "900847595"
+  }
+}

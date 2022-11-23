@@ -1,0 +1,14 @@
+{
+    "nextAction":"tenderStart",
+    "status":"tenderCancelled",
+    "statusDetails":{
+       "returnAmount":"10",
+       "TenderList":[
+          {
+             "TenderType":"Cash",
+             "TenderAmt":"10"
+          }
+       ]
+    }
+ }
+ 

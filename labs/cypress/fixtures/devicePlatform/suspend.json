@@ -1,0 +1,12 @@
+ {
+    "paymentModes":[
+       {
+          "paymentMode":"CASH",
+          "status":true
+       },
+       {
+          "paymentMode":"CARD",
+          "status":true
+       }
+    ]
+ }

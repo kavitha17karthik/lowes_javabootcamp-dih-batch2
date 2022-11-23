@@ -1,0 +1,9 @@
+{
+  "peripherals": [
+    {
+      "localId": "local-receipt-printer",
+      "status": true,
+      "categories": ["PRINTER"]
+    }
+  ]
+}

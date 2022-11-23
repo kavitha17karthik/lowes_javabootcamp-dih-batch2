@@ -1,0 +1,81 @@
+{
+  "customerList": [
+    {
+      "cus_nbr": "",
+      "mast_cus_nbr": "186458121874177628",
+      "fir_nme": "RALPH",
+      "lst_nme": "HARPER",
+      "short_name": "RALPH H.",
+      "bus_nme": "",
+      "bus_ctc_nme": [],
+      "emp_crd_nbr": "",
+      "contact_info": {
+        "tele": [
+          {
+            "seq": "1814581218",
+            "type": "19",
+            "ara": "987",
+            "ecg": "650",
+            "loc": "9876",
+            "ext": "",
+            "cry": "1",
+            "cty": "",
+            "itl_loc": "",
+            "itl_ext": ""
+          }
+        ],
+        "addr": [
+          {
+            "type": "4",
+            "adr_nbr": "",
+            "line1": "140 LEGACY VILLAGE BLVD",
+            "line2": "",
+            "line3": "",
+            "city": "MOORESVILLE",
+            "st": "NC",
+            "pot": "28117",
+            "cityLmt": "",
+            "county": "",
+            "pvn": "",
+            "geoCode": "",
+            "geoCodeCnt": "",
+            "cry": "1",
+            "drt": ""
+          }
+        ],
+        "ema_addr": "VTALUPU5@LOWES.COM"
+      },
+      "cust_nbrs": [
+        {
+          "cust_nbr": 946060794
+        }
+      ],
+      "cust_sys_ids": [
+        {
+          "cust_sys_id_nbr": "158121874183458826297"
+        }
+      ],
+      "mil_status": "VERIFIED",
+      "prc_cla": "P",
+      "bill_to_key": "",
+      "guest_flag": "",
+      "dummy_index": 0,
+      "key_fob_list_cnt": 3,
+      "mst_upd_dt": "2020-02-09T03:25:41.809",
+      "cus_upd_dm": "2020-12-02T09:31:07.758"
+    }
+  ],
+  "militaryIDCheckType": 1,
+  "statusDetails": {
+    "msgType": "customerSelection",
+    "msg": "",
+    "responseType": "jsonCustDtls",
+    "dataRequired": [
+      {
+        "dataNeeded": "jsonCustSelectionDtls",
+        "dataType": "json",
+        "optional": false
+      }
+    ]
+  }
+}

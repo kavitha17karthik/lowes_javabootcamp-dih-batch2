@@ -1,0 +1,21 @@
+{
+  "status": "dataNeeded",
+  "nextAction": "continue",
+  "statusDetails": {
+    "msgType": "CardLast4",
+    "msg": "Last 4 digits",
+    "responseType": "jsonRqstDtls",
+    "dataRequired": [
+      {
+        "dataNeeded": "last4",
+        "dataType": "string",
+        "optional": false
+      }
+    ],
+    "alert": {
+      "alertTxt": "",
+      "alertId": ""
+    }
+  },
+  "requestId": "1"
+}

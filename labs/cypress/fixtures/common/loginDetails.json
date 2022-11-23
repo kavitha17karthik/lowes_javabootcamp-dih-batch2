@@ -1,0 +1,75 @@
+{
+  "6382": {
+    "associate": {
+      "username": "tu1",
+      "password": "lowes123",
+      "QRCode": "^AEw8WvISZy4kDBRV3WfvKCtSHOF9UPzcqP8NnoUyXMQ=[114q"
+    },
+    "manager": {},
+    "headCashier": {}
+  },
+  "6350": {
+    "associate": {
+      "username": "aa1",
+      "password": "lowes123",
+      "QRCode": "^Scfr6u2wYlwvz7dMbZSTWwHbtpnnWy14VkRWiv/wuPk=[114q"
+    }
+  },
+  "6530": {
+    "associate": {
+      "username": "aa1",
+      "password": "lowes123",
+      "QRCode": "^G5N8DXrVqPBgm9mnHGwP8awGAnKQYzJYZc/T5VZVFbU=[114q"
+    }
+  },
+  "6415": {
+    "associate": {
+      "username": "tu1",
+      "password": "lowes123",
+      "QRCode": "^_QR_qQ42d7NQxqDoQLFqozUzT4/fqxMS3YiP17c/BbjmAfQ=[114q"
+    },
+    "associateSecondaryLogin": {
+      "username": "tt1",
+      "password": "lowes123",
+      "QRCode": "^_QR_jyCIHPdSGi2ByXXnOCL/mc7ThMDRAQuQMnaXTvgMIHg=[114q"
+    }
+  },
+  "6408": {
+    "associate": {
+      "username": "tu1",
+      "password": "lowes123",
+      "QRCode": "^_QR_7o9yKrPHR++DoaF4uW/D9BfgKes2FNFP/xXpznwg8cw=[114q"
+    },
+    "associateSecondaryLogin": {
+      "username": "tu1",
+      "password": "lowes123",
+      "QRCode": "_QR_7o9yKrPHR++DoaF4uW/D9BfgKes2FNFP/xXpznwg8cw=[114q"
+    }
+  },
+  "6335": {
+    "associate": {
+      "username": "tu1",
+      "password": "lowes123",
+      "QRCode": "^_QR_qQ42d7NQxqDoQLFqozUzT4/fqxMS3YiP17c/BbjmAfQ=[114q"
+    }
+  },
+  "6339": {
+    "associate": {
+      "username": "tu1",
+      "password": "lowes123",
+      "QRCode": "^_QR_qQ42d7NQxqDoQLFqozUzT4/fqxMS3YiP17c/BbjmAfQ=[114q"
+    }
+  },
+  "6408": {
+    "associate": {
+      "username": "tu1",
+      "password": "lowes123",
+      "QRCode": "^_QR_7o9yKrPHR++DoaF4uW/D9BfgKes2FNFP/xXpznwg8cw=[114q"
+    },
+    "associateSecondaryLogin": {
+      "username": "tu1",
+      "password": "lowes123",
+      "QRCode": "_QR_7o9yKrPHR++DoaF4uW/D9BfgKes2FNFP/xXpznwg8cw=[114q"
+    }
+  }
+}

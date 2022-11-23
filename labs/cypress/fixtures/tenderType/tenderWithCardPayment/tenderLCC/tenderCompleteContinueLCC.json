@@ -1,0 +1,20 @@
+{
+  "nextAction": "saleComplete",
+  "status": "TenderCompleted",
+  "statusDetails": {
+    "LastTender": {
+      "TenderType": "LCC",
+      "TenderAmt": "102",
+      "CardNbr": "XXXXXXXXXXXX0552",
+      "authCd": "000177"
+    },
+    "Tender": {
+      "TotalAmount": "102",
+      "AmountOwed": "0",
+      "Change": "0"
+    },
+    "Invoice Details": {
+      "invoiceNumber": "60187"
+    }
+  }
+}

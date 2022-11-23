@@ -1,0 +1,259 @@
+{
+  "logOffReport": {
+    "messageToPrint": [
+      {
+        "lineToPrint": "               LOWE'S                                   ",
+        "fontType": 6
+      },
+      {
+        "lineToPrint": "       LOGOFF REPORT FOR TERM: 0039                     "
+      },
+      {
+        "lineToPrint": "               11-02-22                                 "
+      },
+      {
+        "lineToPrint": "                                                        "
+      },
+      {
+        "lineToPrint": "LOGIN ID:FSTLAN02 TERM:0039 STORE:6335                  "
+      },
+      {
+        "lineToPrint": "                                                        "
+      },
+      {
+        "lineToPrint": " TRANSACTION       TRANSACTION  NBR OF                  "
+      },
+      {
+        "lineToPrint": " TYPE                   AMOUNT   TRANS                  "
+      },
+      {
+        "lineToPrint": "--------------------------------------                  "
+      },
+      {
+        "lineToPrint": " START BANK               0.00                          "
+      },
+      {
+        "lineToPrint": " LOANS                    0.00      0                   "
+      },
+      {
+        "lineToPrint": " WITHDRAWALS              0.00      0                   "
+      },
+      {
+        "lineToPrint": " NET CASH                 0.00                          "
+      },
+      {
+        "lineToPrint": "--------------------------------------                  "
+      },
+      {
+        "lineToPrint": " CASH IN TILL             0.00                          "
+      },
+      {
+        "lineToPrint": " CHECKS                   0.00      0                   "
+      },
+      {
+        "lineToPrint": " CHECKS REFUND            0.00      0                   "
+      },
+      {
+        "lineToPrint": " LCC                      0.00      0                   "
+      },
+      {
+        "lineToPrint": " LCC   REFUND             0.00      0                   "
+      },
+      {
+        "lineToPrint": " M/C                      0.00      0                   "
+      },
+      {
+        "lineToPrint": " M/C   REFUND             0.00      0                   "
+      },
+      {
+        "lineToPrint": " VISA                     0.00      0                   "
+      },
+      {
+        "lineToPrint": " VISA  REFUND             0.00      0                   "
+      },
+      {
+        "lineToPrint": " AMEX                     0.00      0                   "
+      },
+      {
+        "lineToPrint": " AMEX  REFUND             0.00      0                   "
+      },
+      {
+        "lineToPrint": " DISC                     0.00      0                   "
+      },
+      {
+        "lineToPrint": " DISC  REFUND             0.00      0                   "
+      },
+      {
+        "lineToPrint": " LVISA                    0.00      0                   "
+      },
+      {
+        "lineToPrint": " LVISA REFUND             0.00      0                   "
+      },
+      {
+        "lineToPrint": " LAR                      0.00      0                   "
+      },
+      {
+        "lineToPrint": " LAR   REFUND             0.00      0                   "
+      },
+      {
+        "lineToPrint": " LPC                      0.00      0                   "
+      },
+      {
+        "lineToPrint": " LPC   REFUND             0.00      0                   "
+      },
+      {
+        "lineToPrint": " LAMEX                    0.00      0                   "
+      },
+      {
+        "lineToPrint": " LAMEX REFUND             0.00      0                   "
+      },
+      {
+        "lineToPrint": " DISC                     0.00      0                   "
+      },
+      {
+        "lineToPrint": " DISC  REFUND             0.00      0                   "
+      },
+      {
+        "lineToPrint": " DEBIT M/C                0.00      0                   "
+      },
+      {
+        "lineToPrint": " DEBIT VISA             141.46      3                   "
+      },
+      {
+        "lineToPrint": " DEBIT ATM                0.00      0                   "
+      },
+      {
+        "lineToPrint": " MERCH/GIFT               0.00      0                   "
+      },
+      {
+        "lineToPrint": " MERCH/GIFT REFUND        0.00      0                   "
+      },
+      {
+        "lineToPrint": " AUTHORIZATIONS           0.00      0                   "
+      },
+      {
+        "lineToPrint": " AUTHORIZATION RFNDS      0.00      0                   "
+      },
+      {
+        "lineToPrint": " LVISA REWARDS            0.00      0                   "
+      },
+      {
+        "lineToPrint": " NET TILL               141.46                          "
+      },
+      {
+        "lineToPrint": "--------------------------------------                  "
+      },
+      {
+        "lineToPrint": " SALES                  121.46      2                   "
+      },
+      {
+        "lineToPrint": " SALES REFUNDS            0.00      0                   "
+      },
+      {
+        "lineToPrint": " INVOICES                 0.00      0                   "
+      },
+      {
+        "lineToPrint": " INVOICE REFUNDS          0.00      0                   "
+      },
+      {
+        "lineToPrint": " GIFT CARD SALES         20.00      1                   "
+      },
+      {
+        "lineToPrint": " GIFT CARD REFUND         0.00      0                   "
+      },
+      {
+        "lineToPrint": " ALLIANCE GC SALES        0.00      0                   "
+      },
+      {
+        "lineToPrint": " ALLIANCE GC RFNDS        0.00      0                   "
+      },
+      {
+        "lineToPrint": "--------------------------------------                  "
+      },
+      {
+        "lineToPrint": " A/R SALES                0.00      0                   "
+      },
+      {
+        "lineToPrint": " A/R RETURNS              0.00      0                   "
+      },
+      {
+        "lineToPrint": "--------------------------------------                  "
+      },
+      {
+        "lineToPrint": " NET A/R POSTINGS         0.00                          "
+      },
+      {
+        "lineToPrint": "--------------------------------------                  "
+      },
+      {
+        "lineToPrint": " A/R PAYMENTS             0.00      0                   "
+      },
+      {
+        "lineToPrint": " LCC PAYMENTS             0.00      0                   "
+      },
+      {
+        "lineToPrint": " LPC PAYMENTS             0.00      0                   "
+      },
+      {
+        "lineToPrint": " LAR PAYMENTS             0.00      0                   "
+      },
+      {
+        "lineToPrint": " MERCH/GIFT RDM CASH      0.00      0                   "
+      },
+      {
+        "lineToPrint": " MISC CASH IN             0.00      0                   "
+      },
+      {
+        "lineToPrint": " LVISA PAYMENTS           0.00      0                   "
+      },
+      {
+        "lineToPrint": " LAMEX PAYMENTS           0.00      0                   "
+      },
+      {
+        "lineToPrint": "--------------------------------------                  "
+      },
+      {
+        "lineToPrint": " A/R PAID OUTS            0.00      0                   "
+      },
+      {
+        "lineToPrint": " CASH PAID OUTS           0.00      0                   "
+      },
+      {
+        "lineToPrint": "--------------------------------------                  "
+      },
+      {
+        "lineToPrint": " UNLOCKS                            1                   "
+      },
+      {
+        "lineToPrint": " ITEMS                  133.72      4                   "
+      },
+      {
+        "lineToPrint": " CHECKS CASHED            0.00      0                   "
+      },
+      {
+        "lineToPrint": " NO SALES                           0                   "
+      },
+      {
+        "lineToPrint": "--------------------------------------                  "
+      },
+      {
+        "lineToPrint": "  LOGIN ID:               SALES NUMBER                  "
+      },
+      {
+        "lineToPrint": "--------------------------------------                  "
+      },
+      {
+        "lineToPrint": "11/02/22  ---END OF REPORT--- 09:41:52                  "
+      },
+      {
+        "lineToPrint": "                                                        "
+      },
+      {
+        "lineToPrint": "                                                        "
+      },
+      {
+        "lineToPrint": "                                                        "
+      }
+    ]
+  }
+}

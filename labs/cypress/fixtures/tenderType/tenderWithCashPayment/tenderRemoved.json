@@ -1,0 +1,14 @@
+{
+  "categories": ["CASH_RECYCLER"],
+  "messageId": "565029a2-68ca-11ea-bc55-0242ac130003",
+  "info": {
+    "transactionAmount": 9894
+  },
+  "localId": "GLORY-CI10-local-cash-recycler",
+  "messageName": "TENDER_REMOVED",
+  "model": "CI10",
+  "source": "PERIPHERAL",
+  "timestamp": "565029a2-68ca-11ea-bc55-0242ac130003",
+  "traceId": "565029a2-68ca-11ea-bc55-0242ac130003",
+  "vendor": "GLORY"
+}

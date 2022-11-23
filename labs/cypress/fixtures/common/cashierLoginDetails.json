@@ -1,0 +1,20 @@
+{
+  "6415": {
+    "valid": {
+      "username": "tt1",
+      "QRCode": "^_QR_jyCIHPdSGi2ByXXnOCL/mc7ThMDRAQuQMnaXTvgMIHg=[114q"
+    },
+    "invalid": {
+      "QRCode": "^_QR_qQ42d7NQxqDoQLFqozUzT4/fqxMS3YiP1bjmAfQ=[114q"
+    }
+  },
+  "6408": {
+    "valid": {
+      "username": "tt1",
+      "QRCode": "^_QR_7o9yKrPHR++DoaF4uW/D9BfgKes2FNFP/xXpznwg8cw=[114q"
+    },
+    "invalid": {
+      "QRCode": "^_QR_qQ42d7NQxqDoQLFqozUzT4/fqxMS3YiP1bjmAfQ=[114q"
+    }
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "storeCart": {
+    "cartId": "7000671199920445462",
+    "itemCount": 1,
+    "cartSummary": {
+      "subTotal": 44.35,
+      "grandTotal": 47.34,
+      "totalTax": 2.99,
+      "totalSaving": 0.0,
+      "totalMarkDownSaving": 0.0,
+      "totalFees": 0.0,
+      "remainingOrderBalance": 0.0,
+      "totalUnlockSaving": 0.0,
+      "subTotalWithFees": 44.35
+    },
+    "customerSegments": ["REGULAR"],
+    "users": [
+      {
+        "poRequired": false,
+        "valPropEnabled": false,
+        "taxExempt": false,
+        "taxExemptOptIn": true
+      }
+    ],
+    "payments": [
+      {
+        "paymentId": "1669090200610781621",
+        "encryptedCardNumber": "4761731397090011",
+        "amount": 42.34,
+        "cardType": "VISA",
+        "transactionType": "REGULAR",
+        "attachedTime": "2022-11-22T04:10:00Z",
+        "gcBalance": 0.0,
+        "cardToken": "476173BWKJGQ0011",
+        "expirationMonth": 12,
+        "expirationYear": 2024,
+        "accountType": "CREDIT",
+        "track2Data": "4761731060011=2412201B964kY4Zi/Kca9eg",
+        "poNumberRequired": false,
+        "addingCard": false,
+        "savedCard": false,
+        "invoiceNumber": "77488",
+        "authorizationCode": "007039",
+        "entryMethod": "5",
+        "posEntryMode": "05",
+        "emvApplicationLabel": "Visa Credit",
+        "emvTsi": "6800",
+        "emvAid": "a0000000031010",
+        "emvTvr": "8080048800",
+        "posIdentificationCode": "2",
+        "cash": false
+      },
+      {
+        "paymentId": "166909010931898862004",
+        "giftCardNumber": "6006491720999916398",
+        "amount": 5.0,
+        "cardType": "GC",
+        "transactionType": "REGULAR",
+        "attachedTime": "2022-11-22T04:08:29Z",
+        "gcBalance": 0.0,
+        "cardToken": "600649WUQHBIDGX6398",
+        "accountType": "CREDIT",
+        "track2Data": "6006491720999916398=491211071608800",
+        "addingCard": false,
+        "savedCard": false,
+        "invoiceNumber": "77488",
+        "authorizationCode": "000000",
+        "entryMethod": "0",
+        "posEntryMode": "1",
+        "posIdentificationCode": "1",
+        "cash": false
+      }
+    ],
+    "masterInvoice": "900847595",
+    "sourceId": "202211226339900847595",
+    "pmlReceiptTemplate": "<template>    <logo/>    <emptyline/>    <line>LOWE'S HOME CENTERS, LLC</line>    <line>1041 CHARLOTTE HIGHWAY</line>    <line>TROUTMAN, NC 28166   (704) 980-5000</line>    <emptyline/>        <line fontSize='large' fontType='normal'>- SALE -</line>    <line>SALES#: FSTLAN04 13  TRANS#: 900847595 11-21-22</line>    <emptyline/>                            <line>  12212 7/16 CAT OSB SHEATHING      44.35   </line>    <emptyline/>        <line>                SUBTOTAL:           44.35</line>        <line>                     TAX:            2.99</line>        <line>    INVOICE 77488  TOTAL:           47.34</line>        <line>                      GC:            5.00</line>        <line>                    VISA:           42.34</line>    <emptyline/>    <line>UNKNWN MERCH/GIFT CARD    6398  AUTHCODE  000000</line>    <line>EXCHG RATE: 1</line>      <line> BEGIN BAL       TRANSACTION AMT      ENDING BAL</line><line>      5.00                  5.00          0.00</line>                <line>VISA: XXXXXXXXXXXX0011 AMOUNT: 42.34 AUTHCD: 007039</line>        <line>CHIP REFID:633923488331 11/21/22 23:10:00</line>        <line>*PIN VERIFIED</line>        <line>APL : Visa Credit   TVR :   8080048800</line>        <line>TSI : 6800   AID :   a0000000031010</line><emptyline/>    <line fontSize='small' fontType='bold'> STORE: 6339  TERMINAL: 99   11/21/22 23:10:47    </line><line fontSize='large' fontType='normal'> # OF ITEMS PURCHASED:    1</line><line>    EXCLUDES FEES, SERVICES AND SPECIAL ORDER ITEMS     </line><emptyline/><barcode>633911212022774880000000</barcode><line>             THANK YOU FOR SHOPPING LOWE'S.             </line><line>        FOR DETAILS ON OUR RETURN POLICY, VISIT         </line><line>                   LOWES.COM/RETURNS                    </line><line>    A WRITTEN COPY OF THE RETURN POLICY IS AVAILABLE    </line><line>              AT OUR CUSTOMER SERVICE DESK              </line><emptyline/><line>                  LOWE'S PRICE PROMISE                  </line><line>     FOR MORE DETAILS, VISIT LOWES.COM/PRICEPROMISE     </line><line>********************************************************</line><line>*                 SHARE YOUR FEEDBACK!                 *</line><line fontSize='small' fontType='bold'>*               ENTER FOR A CHANCE TO BE               *</line><line fontSize='small' fontType='bold'>*       ONE OF FIVE $500 WINNERS DRAWN MONTHLY!        *</line><line>*             iENTRE EN EL SORTEO MENSUAL              *</line><line>*     PARA SER UNO DE LOS CINCO GANADORES DE $500!     *</line><line>*                                                      *</line><line>*          ENTER BY COMPLETING A SHORT SURVEY          *</line><line>*       WITHIN ONE WEEK AT: www.lowes.com/survey       *</line><line>*           Y O U R   I D #774882 633963 262986        *</line><line>*                                                      *</line><line>*        NO PURCHASE NECESSARY TO ENTER OR WIN.        *</line><line>* VOID WHERE PROHIBITED. MUST BE 18 OR OLDER TO ENTER. *</line><line>*  OFFICIAL RULES &amp; WINNERS AT:  www.lowes.com/survey  *</line><line>********************************************************</line><line fontSize='small' fontType='bold'>    STORE: 6339     TERMINAL: 99   11/21/22 23:10:47    </line>    <emptyline/>    <cutPaper/></template>",
+    "cartType": "SHOPPING",
+    "terminalNumber": "99",
+    "associateId": "FSTLAN04",
+    "createdOn": "2022-11-22T04:08:00Z",
+    "cartItems": [
+      {
+        "cartItemId": "16690900802933310740",
+        "fulfillments": [
+          {
+            "fulfillmentId": "1",
+            "fulfillmentType": "CARRYWITH",
+            "fulfillmentNode": "6339",
+            "availabilityTime": "2022-11-22T04:08:05Z"
+          }
+        ],
+        "promotions": [],
+        "quantity": 1,
+        "taxExemptions": [],
+        "title": "7/16-in x 4-ft x 8-ft OSB Sheathing",
+        "additionalServices": {},
+        "itemSummary": {
+          "discount": 0.0,
+          "markDownSaving": 0.0,
+          "subTotal": 44.35,
+          "subTotalAfterDisc": 44.35,
+          "fees": [],
+          "totalPrice": 47.34,
+          "unlockDiscount": 0.0,
+          "totalSavings": 0.0,
+          "totalSavingsByUnit": 0.0
+        },
+        "priceInfo": {
+          "prices": [
+            {
+              "type": "FINAL",
+              "value": 44.35
+            },
+            {
+              "type": "RETAIL",
+              "value": 44.35
+            },
+            {
+              "type": "BASE",
+              "value": 44.35
+            }
+          ],
+          "priceType": 1,
+          "saveComponents": []
+        },
+        "productInfo": {
+          "omniItemId": "3602798",
+          "productDescription": "7/16-in x 4-ft x 8-ft OSB Sheathing",
+          "shortDescription": "7/16 CAT OSB SHEATHING",
+          "itemNumber": "12212",
+          "model": "13287",
+          "itemType": "RGL",
+          "vendor": "132",
+          "imageUrl": "https://images.lowes.com/product/converted/088991/088991550315.jpg",
+          "brand": "Unbranded",
+          "barCode": "088991550315",
+          "paintFormulaCode": "NO FORMULA",
+          "interpackCode": "EA",
+          "confirmQuantity": false,
+          "unlockablePrice": false,
+          "unlockableQty": false,
+          "unlockNursery": false
+        },
+        "terminalNumber": "99",
+        "itemEntryMethod": "0",
+        "invoiceNumber": "77488",
+        "maxReturnableQty": 0,
+        "isLiveGood": false
+      }
+    ],
+    "salesman": {
+      "name": " ",
+      "number": "13"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "paymentModes": [
+    {
+      "paymentMode": "CARD",
+      "status": true,
+      "amount": 111,
+      "currencyCode": "USD"
+    }
+  ]
+}

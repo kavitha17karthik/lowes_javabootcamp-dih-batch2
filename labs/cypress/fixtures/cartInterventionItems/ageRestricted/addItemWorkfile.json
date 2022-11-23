@@ -1,0 +1,58 @@
+{
+  "itemInfo": {
+    "itemNumber": 10452,
+    "description": "CORONA 10-IN FOLDING PRUNING SAW",
+    "model": "RS 7265D",
+    "itemCode": "N",
+    "sellingUnit": "EA",
+    "sellingUnitLong": "EACH",
+    "onHandQty": 0,
+    "cost": 867,
+    "price": 1198,
+    "visualVrfRequired": "",
+    "loadIdc": "CW",
+    "npiLevel": "",
+    "deptNum": 0,
+    "upcQuantity": 1,
+    "endecaImagePath": {
+      "sm": "",
+      "lg": "",
+      "xl": ""
+    },
+    "endecaItemNum": "",
+    "endecaPrice": "0.000000",
+    "endecaModelId": "",
+    "endecaRecordId": "",
+    "endecaProductDescription": "",
+    "endecaProductName": "",
+    "validationStatus": "VRF_REQ",
+    "validationCode": "AGE",
+    "nextAction": "",
+    "actionCode": "",
+    "itemType": "",
+    "note": "Does your customer's birthdate fall on or before 8/2/2004?",
+    "combinable": 1,
+    "discountable": 1,
+    "message": "",
+    "enableInstallSaleIdc": "",
+    "endecaProductReviewCount": "",
+    "endecaProductRating": "",
+    "Locations": [],
+    "workfile": "FSTLAN0124396",
+    "lineNbr": -1,
+    "paintFormula": ""
+  },
+  "statusDetails": {
+    "msgType": "CONFIRM_TO_PROCEED",
+    "msg": "Confirm to proceed further",
+    "responseType": "webParms",
+    "dataRequired": [
+      {
+        "dataNeeded": "confirm",
+        "dataType": "static",
+        "optional": false,
+        "value": "1"
+      }
+    ]
+  }
+}

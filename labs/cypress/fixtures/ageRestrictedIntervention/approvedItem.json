@@ -1,0 +1,97 @@
+{
+  "storeCart": {
+    "cartId": "6978997807505959091",
+    "itemCount": 1,
+    "cartSummary": {
+      "subTotal": 6.48,
+      "grandTotal": 6.48,
+      "totalTax": 0.0,
+      "totalSaving": 0.0,
+      "totalMarkDownSaving": 0.0,
+      "totalFees": 0.0,
+      "remainingOrderBalance": 6.48,
+      "totalUnlockSaving": 0.0,
+      "subTotalWithFees": 6.48,
+      "shippingTax": 0.0
+    },
+    "customerSegments": ["REGULAR"],
+    "users": [
+      {
+        "poRequired": false,
+        "valPropEnabled": false,
+        "userType": "SHOPPER",
+        "taxExempt": false,
+        "taxExemptOptIn": true
+      }
+    ],
+    "cartType": "SHOPPING",
+    "terminalNumber": "62",
+    "associateId": "FSTLAN02",
+    "createdOn": "2022-09-23T08:45:40Z",
+    "cartItems": [
+      {
+        "cartItemId": "166392274085771603214",
+        "fulfillments": [
+          {
+            "fulfillmentId": "1",
+            "fulfillmentType": "CARRYWITH",
+            "fulfillmentNode": "6339",
+            "availabilityTime": "2022-09-23T08:45:41Z",
+            "availableQty": 9999,
+            "availableStatus": true,
+            "selected": true
+          }
+        ],
+        "promotions": [],
+        "quantity": 1,
+        "taxExemptions": [],
+        "baseQuantity": 1,
+        "additionalServices": {},
+        "itemSummary": {
+          "discount": 0.0,
+          "markDownSaving": 0.0,
+          "subTotal": 6.48,
+          "subTotalAfterDisc": 6.48,
+          "salesTax": 0.0,
+          "totalPrice": 6.48,
+          "unlockDiscount": 0.0,
+          "serviceTotal": 0.0
+        },
+        "priceInfo": {
+          "prices": [
+            { "type": "RETAIL", "value": 6.48 },
+            { "type": "FINAL", "value": 6.48 },
+            { "type": "BASE", "value": 6.48 }
+          ],
+          "priceType": 1,
+          "totalPercentage": 0.0
+        },
+        "productInfo": {
+          "omniItemId": "1000460163",
+          "productDescription": "FUSION ALL-IN-ONE Gloss Black Stainless Metallic Spray Paint and Primer In One (NET WT. 12-oz)",
+          "shortDescription": "12-OZ FUS METALLIC BLACK STAINLES",
+          "itemNumber": "1026685",
+          "model": "K02790007",
+          "itemType": "RGL",
+          "vendor": "678",
+          "imageUrl": "https://images.lowes.com/product/converted/724504/724504027904.jpg",
+          "brand": "Krylon",
+          "barCode": "724504027904",
+          "paintFormulaCode": "NO FORMULA",
+          "interpackCode": "TE",
+          "confirmQuantity": false,
+          "unlockablePrice": true,
+          "unlockableQty": true,
+          "unlockNursery": false
+        },
+        "terminalNumber": "62",
+        "associateId": "FSTLAN02",
+        "itemEntryMethod": "0",
+        "maxReturnableQty": 0,
+        "isLiveGood": false
+      }
+    ]
+  },
+  "cartStatus": "ITEM_NUMBER_ADDED",
+  "fulfillmentConsolidation": {}
+}

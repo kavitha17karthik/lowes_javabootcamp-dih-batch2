@@ -1,0 +1,9 @@
+{
+  "peripherals": [
+    {
+      "localId": "serialstatusLight",
+      "status": true,
+      "categories": ["STATUSLIGHT"]
+    }
+  ]
+}

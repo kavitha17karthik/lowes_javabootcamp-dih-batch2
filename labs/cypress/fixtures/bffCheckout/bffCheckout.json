@@ -1,0 +1,103 @@
+{
+  "storeCart": {
+    "cartId": "6960209587791152889",
+    "itemCount": 6,
+    "cartSummary": {
+      "subTotal": 266.1,
+      "grandTotal": 284.06,
+      "totalTax": 17.96,
+      "totalSaving": 0.0,
+      "totalMarkDownSaving": 0.0,
+      "totalFees": 0.0,
+      "remainingOrderBalance": 284.06,
+      "totalUnlockSaving": 0.0,
+      "subTotalWithFees": 266.1,
+      "shippingTax": 0.0
+    },
+    "customerSegments": ["MILITARY"],
+    "users": [
+      {
+        "poRequired": false,
+        "valPropEnabled": false,
+        "userType": "DIY",
+        "taxExempt": false,
+        "taxExemptOptIn": true,
+        "firstName": "BAKER",
+        "lastName": "BRANDON",
+        "emailId": "SUSSH@LOWES.COM"
+      }
+    ],
+    "cartType": "SHOPPING",
+    "createdOn": "2022-09-28T23:30:31Z",
+    "cartItems": [
+      {
+        "cartItemId": "16594432802349881988",
+        "fulfillments": [
+          {
+            "fulfillmentId": "1",
+            "fulfillmentType": "CARRYWITH",
+            "fulfillmentNode": "6335",
+            "availabilityTime": "2022-09-28T23:36:02Z",
+            "availableStatus": true,
+            "selected": true
+          }
+        ],
+        "promotions": [],
+        "quantity": 6,
+        "taxExemptions": [],
+        "additionalServices": {},
+        "itemSummary": {
+          "discount": 0.0,
+          "markDownSaving": 0.0,
+          "subTotal": 266.1,
+          "subTotalAfterDisc": 266.1,
+          "salesTax": 17.96,
+          "fees": [],
+          "totalPrice": 284.06,
+          "unlockDiscount": 0.0,
+          "totalSavings": 0.0,
+          "totalSavingsByUnit": 0.0,
+          "serviceTotal": 0.0
+        },
+        "priceInfo": {
+          "prices": [
+            {
+              "type": "BASE",
+              "value": 44.35
+            },
+            {
+              "type": "RETAIL",
+              "value": 44.35
+            },
+            {
+              "type": "FINAL",
+              "value": 44.35
+            }
+          ],
+          "priceType": 1,
+          "totalPercentage": 0.0
+        },
+        "productInfo": {
+          "omniItemId": "3602798",
+          "productDescription": "7/16-in x 4-ft x 8-ft OSB Sheathing",
+          "shortDescription": "7/16 CAT OSB SHEATHING",
+          "itemNumber": "12212",
+          "model": "13287",
+          "itemType": "RGL",
+          "vendor": "132",
+          "imageUrl": "https://images.lowes.com/product/converted/088991/088991550315.jpg",
+          "brand": "Unbranded",
+          "interpackCode": "EA",
+          "confirmQuantity": false,
+          "unlockablePrice": true,
+          "unlockableQty": true,
+          "unlockNursery": false
+        },
+        "mdExcluded": "true",
+        "maxReturnableQty": 0,
+        "isLiveGood": false
+      }
+    ]
+  },
+  "fulfillmentConsolidation": {}
+}

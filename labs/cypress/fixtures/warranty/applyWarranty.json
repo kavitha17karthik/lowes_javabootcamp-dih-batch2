@@ -1,0 +1,8 @@
+{
+  "statusDetails": {
+    "msgType": "warrantySuccess",
+    "msg": "",
+    "responseType": ""
+  },
+  "nextAction": "process"
+}

@@ -1,0 +1,12 @@
+{
+  "storeId": "6335",
+  "countryCode": "UNITED STATES",
+  "priceUnlock": {},
+  "terminal": { "terminalNumber": "87" },
+  "bagFees": { "isRequired": true },
+  "returns": {
+    "itemDispositionPrinters": "WMP40,WMP41",
+    "itemDispositionLabel": "H3X1MRV",
+    "managerHrJbcTxt": "DH0079,DH0078,DH0077,DM0008,DH0076,SC0083,SC0018,SM0010,SM0096,SM0095,SM0094,SM0135,SM0136"
+  }
+}

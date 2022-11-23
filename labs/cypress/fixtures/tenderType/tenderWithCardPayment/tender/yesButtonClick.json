@@ -1,0 +1,158 @@
+{
+  "status": "SaleCompleted",
+  "nextAction": "moveWorkfile",
+  "receipt": {
+    "receiptData": {
+      "storeDetails": {
+        "messageToPrint": [
+          { "logoToPrint": "C:\\SCOT\\image\\scotlogo.bmp" },
+          {
+            "lineToPrint": "                LOWE'S HOME CENTERS, LLC                "
+          },
+          {
+            "lineToPrint": "                 2003 W US HIGHWAY 421                  "
+          },
+          {
+            "lineToPrint": "         WILKESBORO, NC 28697   (336) 838-1500          "
+          },
+          {
+            "lineToPrint": "                                                        "
+          }
+        ]
+      },
+      "receiptTitle": {
+        "messageToPrint": [
+          { "lineToPrint": "          - SALE -          ", "fontType": 2 }
+        ]
+      },
+      "saleInfo": {
+        "messageToPrint": [
+          {
+            "lineToPrint": "     SALES#: FSTLAN01 13  TRANS#: 62423391 04-21-22     "
+          },
+          {
+            "lineToPrint": "                                                        "
+          }
+        ]
+      },
+      "items": {
+        "messageToPrint": [
+          {
+            "lineToPrint": "       1222 1/4-4-4 POPLAR PROJECT BO       5.71        "
+          }
+        ]
+      },
+      "totals": {
+        "messageToPrint": [
+          {
+            "lineToPrint": "                                                        "
+          },
+          {
+            "lineToPrint": "                       SUBTOTAL:            5.71        "
+          },
+          {
+            "lineToPrint": "                            TAX:            0.40        "
+          },
+          {
+            "lineToPrint": "           INVOICE 62200  TOTAL:            6.11        "
+          }
+        ]
+      },
+      "tenderSummary": {
+        "messageToPrint": [
+          {
+            "lineToPrint": "                           VISA:            6.11        "
+          },
+          {
+            "lineToPrint": "                                                        "
+          }
+        ]
+      },
+      "tenderDetails": {
+        "messageToPrint": [
+          {
+            "lineToPrint": "   VISA: XXXXXXXXXXXX0243 AMOUNT:6.11 AUTHCD: 042409    "
+          },
+          {
+            "lineToPrint": "       CHIP REFID:633823200879 08/25/22 06:29:55        "
+          },
+          {
+            "lineToPrint": "           APL: Visa Credit   TVR: 8080008800           "
+          },
+          {
+            "lineToPrint": "            AID: A0000000031010   TSI: 6800             "
+          }
+        ]
+      },
+      "transactionInfo": {
+        "messageToPrint": [
+          {
+            "lineToPrint": "    STORE: 6415     TERMINAL: 62   08/25/22 06:29:51    ",
+            "fontType": 6
+          }
+        ]
+      },
+      "numberOfItems": {
+        "messageToPrint": [
+          { "lineToPrint": " # OF ITEMS PURCHASED:    1 ", "fontType": 2 }
+        ]
+      },
+      "returnBarcode": {
+        "messageToPrint": [
+          {
+            "lineToPrint": "    EXCLUDES FEES, SERVICES AND SPECIAL ORDER ITEMS     "
+          },
+          {
+            "lineToPrint": "                                                        "
+          },
+          { "barcodeToPrint": "641504212022622000038040" }
+        ]
+      },
+      "receiptTrailer": {
+        "messageToPrint": [
+          {
+            "lineToPrint": "             THANK YOU FOR SHOPPING LOWE'S.             "
+          },
+          {
+            "lineToPrint": "        FOR DETAILS ON OUR RETURN POLICY, VISIT         "
+          },
+          {
+            "lineToPrint": "                   LOWES.COM/RETURNS                    "
+          },
+          {
+            "lineToPrint": "    A WRITTEN COPY OF THE RETURN POLICY IS AVAILABLE    "
+          },
+          {
+            "lineToPrint": "              AT OUR CUSTOMER SERVICE DESK              "
+          },
+          {
+            "lineToPrint": "                                                        "
+          },
+          {
+            "lineToPrint": "               STORE MANAGER: CHAD MADDOX               "
+          },
+          {
+            "lineToPrint": "                                                        "
+          },
+          {
+            "lineToPrint": "              LOWE'S PRICE MATCH GUARANTEE              "
+          },
+          {
+            "lineToPrint": "      FOR MORE DETAILS, VISIT LOWES.COM/PRICEMATCH      "
+          }
+        ]
+      },
+      "projectStarter": {
+        "messageToPrint": [{ "receiptPaperCut": "#CUTPAPER" }]
+      },
+      "propaneInfo": { "messageToPrint": [] },
+      "storeReceipt": false,
+      "taxExemptReceipt": false,
+      "customerReceipt": true,
+      "rebateRcpt": false,
+      "assemblyTicketRcpt": false,
+      "problemItemRcpt": false,
+      "giftCardRcpt": false
+    }
+  }
+}

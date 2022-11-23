@@ -1,0 +1,277 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "MRV SCO | Add Item Scan feature",
+    "line": 3,
+    "id": "mrv-sco-|-add-item-scan-feature",
+    "tags": [
+      {
+        "name": "@HYBRID",
+        "line": 2
+      }
+    ],
+    "uri": "addItemScan.feature",
+    "elements": [
+      {
+        "id": "mrv-sco-|-add-item-scan-feature;scan-coupon-and-blackhawk",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Scan Coupon and Blackhawk",
+        "tags": [
+          {
+            "name": "@HYBRID",
+            "line": 2
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "The user is on MRV sco page",
+            "result": {
+              "status": "passed",
+              "duration": 2003000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "User clicks on store sign in button",
+            "result": {
+              "status": "passed",
+              "duration": 218000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "Verify if user is navigated to the store sign in page",
+            "result": {
+              "status": "passed",
+              "duration": 18000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "Enter the Login Credentials",
+            "result": {
+              "status": "passed",
+              "duration": 1994000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "Verify if user is navigated to start scanning page",
+            "result": {
+              "status": "passed",
+              "duration": 759000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "itemNumber"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "^076750043900009877890000004567[114q"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "itemNumber"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "^470000000063826[114q"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 12,
+            "name": "User Scans the Item Number",
+            "result": {
+              "status": "passed",
+              "duration": 2313000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "The user clicks on the Item Entry menu",
+            "result": {
+              "status": "passed",
+              "duration": 182000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "Validate the Item Entry Page",
+            "result": {
+              "status": "passed",
+              "duration": 271000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "itemNumber"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "12212"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "Click the Valid Item number in touchpad keyboard and Enter",
+            "result": {
+              "status": "passed",
+              "duration": 2511000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "Validate the add quantity page with user Message \"How many do you have?\"",
+            "result": {
+              "status": "passed",
+              "duration": 179000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "itemQty"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "1"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 23,
+            "name": "Click the quantity for the Item and Enter",
+            "result": {
+              "status": "passed",
+              "duration": 992000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "lineNumber"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "1"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 26,
+            "name": "Validate the item added in the cart",
+            "result": {
+              "status": "passed",
+              "duration": 595000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "lineNumber"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "1"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 29,
+            "name": "When user clicks on line number item & Back button",
+            "result": {
+              "status": "passed",
+              "duration": 1639000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 32,
+            "name": "Login into store mode by Clicking StoreMode button",
+            "result": {
+              "status": "passed",
+              "duration": 319000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 33,
+            "name": "Store Login Credentials",
+            "result": {
+              "status": "passed",
+              "duration": 3212000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 34,
+            "name": "Validate the StoreMode Page",
+            "result": {
+              "status": "passed",
+              "duration": 728000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,992 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "MRV SCO | Valid Email ID",
+    "line": 2,
+    "id": "mrv-sco-|-valid-email-id",
+    "tags": [
+      {
+        "name": "@HYBRID",
+        "line": 1
+      }
+    ],
+    "uri": "emailValidation.feature",
+    "elements": [
+      {
+        "id": "mrv-sco-|-valid-email-id;valid-email-id",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Valid Email ID",
+        "tags": [
+          {
+            "name": "@HYBRID",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "The user is on MRV sco page",
+            "result": {
+              "status": "passed",
+              "duration": 4021000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "User clicks on store sign in button",
+            "result": {
+              "status": "passed",
+              "duration": 778000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Verify if user is navigated to the store sign in page",
+            "result": {
+              "status": "passed",
+              "duration": 29000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "Enter the Login Credentials",
+            "result": {
+              "status": "passed",
+              "duration": 3305000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "Verify if user is navigated to start scanning page",
+            "result": {
+              "status": "passed",
+              "duration": 873000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "The User is on Start scanning with Menu page",
+            "result": {
+              "status": "passed",
+              "duration": 35000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "The user clicks on the Item Entry menu",
+            "result": {
+              "status": "passed",
+              "duration": 256000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "Validate the Item Entry Page",
+            "result": {
+              "status": "passed",
+              "duration": 281000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "itemNumber"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "1121"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "Click the Valid Item number in touchpad keyboard and Enter",
+            "result": {
+              "status": "passed",
+              "duration": 3506000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "Validate the add quantity page with user Message \"How many do you have?\"",
+            "result": {
+              "status": "passed",
+              "duration": 541000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "itemQty"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "1"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 19,
+            "name": "Click the quantity for the Item and Enter",
+            "result": {
+              "status": "passed",
+              "duration": 1082000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "lineNumber"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "1"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 22,
+            "name": "Validate the item added in the cart",
+            "result": {
+              "status": "passed",
+              "duration": 596000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 25,
+            "name": "Click on the Pay Now button",
+            "result": {
+              "status": "passed",
+              "duration": 1451000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "Validate the Bag page",
+            "result": {
+              "status": "passed",
+              "duration": 1146000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "BagQuantity"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "1"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 27,
+            "name": "Enter the Bag quantity using touchpad and Click Enter",
+            "result": {
+              "status": "passed",
+              "duration": 1146000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 30,
+            "name": "Validate the Tender Page",
+            "result": {
+              "status": "passed",
+              "duration": 2083000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 31,
+            "name": "Insert the card in the PED device and enter the Pin number",
+            "result": {
+              "status": "passed",
+              "duration": 5056000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 32,
+            "name": "Authorization Loader get enabled",
+            "result": {
+              "status": "passed",
+              "duration": 10066000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 33,
+            "name": "Provide the signature from PinPad",
+            "result": {
+              "status": "passed",
+              "duration": 10589000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 34,
+            "name": "Validate the Select the Print option page",
+            "result": {
+              "status": "passed",
+              "duration": 123000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 35,
+            "name": "Click on Email & Print button",
+            "result": {
+              "status": "passed",
+              "duration": 500000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 36,
+            "name": "Validate if the existing email id is correct \"Is this correct?\"",
+            "result": {
+              "status": "passed",
+              "duration": 1448000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 37,
+            "name": "Validate Please enter your email",
+            "result": {
+              "status": "passed",
+              "duration": 684000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 38,
+            "name": "Enter the Valid Email Id \"y@hotmail.com\" and Tap Apply",
+            "result": {
+              "status": "passed",
+              "duration": 1028000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 39,
+            "name": "Validate \"Is this correct?\" and tap yes",
+            "result": {
+              "status": "passed",
+              "duration": 1515000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "mrv-sco-|-valid-email-id;invalid-email-id",
+        "keyword": "Scenario",
+        "line": 43,
+        "name": "InValid Email ID",
+        "tags": [
+          {
+            "name": "@HYBRID",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "The user is on MRV sco page",
+            "result": {
+              "status": "passed",
+              "duration": 1733000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "User clicks on store sign in button",
+            "result": {
+              "status": "passed",
+              "duration": 198000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Verify if user is navigated to the store sign in page",
+            "result": {
+              "status": "passed",
+              "duration": 12000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "Enter the Login Credentials",
+            "result": {
+              "status": "passed",
+              "duration": 2035000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "Verify if user is navigated to start scanning page",
+            "result": {
+              "status": "passed",
+              "duration": 725000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "The User is on Start scanning with Menu page",
+            "result": {
+              "status": "passed",
+              "duration": 23000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "The user clicks on the Item Entry menu",
+            "result": {
+              "status": "passed",
+              "duration": 187000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "Validate the Item Entry Page",
+            "result": {
+              "status": "passed",
+              "duration": 235000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "itemNumber"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "1121"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 44,
+            "name": "Click the Valid Item number in touchpad keyboard and Enter",
+            "result": {
+              "status": "passed",
+              "duration": 2110000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 47,
+            "name": "Validate the add quantity page with user Message \"How many do you have?\"",
+            "result": {
+              "status": "passed",
+              "duration": 527000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "itemQty"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "1"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 48,
+            "name": "Click the quantity for the Item and Enter",
+            "result": {
+              "status": "passed",
+              "duration": 939000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "lineNumber"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "1"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 51,
+            "name": "Validate the item added in the cart",
+            "result": {
+              "status": "passed",
+              "duration": 400000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 54,
+            "name": "Click on the Pay Now button",
+            "result": {
+              "status": "passed",
+              "duration": 490000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 55,
+            "name": "Validate the Bag page",
+            "result": {
+              "status": "passed",
+              "duration": 750000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "BagQuantity"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "1"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 56,
+            "name": "Enter the Bag quantity using touchpad and Click Enter",
+            "result": {
+              "status": "passed",
+              "duration": 1164000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 59,
+            "name": "Validate the Tender Page",
+            "result": {
+              "status": "passed",
+              "duration": 897000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 60,
+            "name": "Insert the card in the PED device and enter the Pin number",
+            "result": {
+              "status": "passed",
+              "duration": 5058000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 61,
+            "name": "Authorization Loader get enabled",
+            "result": {
+              "status": "passed",
+              "duration": 10063000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 62,
+            "name": "Provide the signature from PinPad",
+            "result": {
+              "status": "passed",
+              "duration": 10621000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 63,
+            "name": "Validate the Select the Print option page",
+            "result": {
+              "status": "passed",
+              "duration": 107000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 64,
+            "name": "Click on Email & Print button",
+            "result": {
+              "status": "passed",
+              "duration": 689000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 65,
+            "name": "Validate if the existing email id is correct \"Is this correct?\"",
+            "result": {
+              "status": "passed",
+              "duration": 1091000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 66,
+            "name": "Validate Please enter your email",
+            "result": {
+              "status": "passed",
+              "duration": 658000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 67,
+            "name": "Enter the invalid email Id \"@gmail.com\" and Tap Apply",
+            "result": {
+              "status": "passed",
+              "duration": 8606000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 68,
+            "name": "Validate invalid email error \"Enter a valid email address.\"",
+            "result": {
+              "status": "passed",
+              "duration": 73000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "mrv-sco-|-valid-email-id;validation-of-blank-emailid",
+        "keyword": "Scenario",
+        "line": 72,
+        "name": "Validation of blank emailId",
+        "tags": [
+          {
+            "name": "@HYBRID",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "The user is on MRV sco page",
+            "result": {
+              "status": "passed",
+              "duration": 1170000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "User clicks on store sign in button",
+            "result": {
+              "status": "passed",
+              "duration": 193000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Verify if user is navigated to the store sign in page",
+            "result": {
+              "status": "passed",
+              "duration": 6000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "Enter the Login Credentials",
+            "result": {
+              "status": "passed",
+              "duration": 1823000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "Verify if user is navigated to start scanning page",
+            "result": {
+              "status": "passed",
+              "duration": 621000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "The User is on Start scanning with Menu page",
+            "result": {
+              "status": "passed",
+              "duration": 21000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "The user clicks on the Item Entry menu",
+            "result": {
+              "status": "passed",
+              "duration": 188000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "Validate the Item Entry Page",
+            "result": {
+              "status": "passed",
+              "duration": 226000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "itemNumber"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "1121"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 73,
+            "name": "Click the Valid Item number in touchpad keyboard and Enter",
+            "result": {
+              "status": "passed",
+              "duration": 2614000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 76,
+            "name": "Validate the add quantity page with user Message \"How many do you have?\"",
+            "result": {
+              "status": "passed",
+              "duration": 1186000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "itemQty"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "1"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 77,
+            "name": "Click the quantity for the Item and Enter",
+            "result": {
+              "status": "passed",
+              "duration": 1775000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "lineNumber"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "1"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 80,
+            "name": "Validate the item added in the cart",
+            "result": {
+              "status": "passed",
+              "duration": 1036000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 83,
+            "name": "Click on the Pay Now button",
+            "result": {
+              "status": "passed",
+              "duration": 647000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 84,
+            "name": "Validate the Bag page",
+            "result": {
+              "status": "passed",
+              "duration": 887000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "BagQuantity"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "1"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 85,
+            "name": "Enter the Bag quantity using touchpad and Click Enter",
+            "result": {
+              "status": "passed",
+              "duration": 1201000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 88,
+            "name": "Validate the Tender Page",
+            "result": {
+              "status": "passed",
+              "duration": 1119000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 89,
+            "name": "Insert the card in the PED device and enter the Pin number",
+            "result": {
+              "status": "passed",
+              "duration": 5096000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 90,
+            "name": "Authorization Loader get enabled",
+            "result": {
+              "status": "passed",
+              "duration": 10086000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 91,
+            "name": "Provide the signature from PinPad",
+            "result": {
+              "status": "passed",
+              "duration": 10947000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 92,
+            "name": "Validate the Select the Print option page",
+            "result": {
+              "status": "passed",
+              "duration": 110000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 93,
+            "name": "Click on Email & Print button",
+            "result": {
+              "status": "passed",
+              "duration": 437000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 94,
+            "name": "Validate if the existing email id is correct \"Is this correct?\"",
+            "result": {
+              "status": "passed",
+              "duration": 2743000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 95,
+            "name": "Validate Please enter your email",
+            "result": {
+              "status": "passed",
+              "duration": 688000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 96,
+            "name": "Omit the existing emailId and Tap Apply",
+            "result": {
+              "status": "passed",
+              "duration": 7127000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 97,
+            "name": "Validate invalid email error \"Enter a valid email address.\"",
+            "result": {
+              "status": "passed",
+              "duration": 63000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

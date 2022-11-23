@@ -1,0 +1,12 @@
+{
+  "PED_MODEL": "",
+  "PED_SERIAL": "",
+  "POLE": 0,
+  "CASH_DRAWER": 0,
+  "PRINTER": 0,
+  "INVOICE_PRINTER": "0070",
+  "REPORT_PRINTER": "0071",
+  "LDOCK_PRINTER": "0072",
+  "SQL_STATUS": "0",
+  "HARDWARE_LOCK": 0
+}

@@ -1,0 +1,17 @@
+{
+  "businessCode": "BFF0004",
+  "description": "Stores Internal error",
+  "statusCode": 500,
+  "businessReason": "Invalid Bifrost response - Empty Response/Product details for BifrostItemSearchRequest(clientType=BFF, site=stores, omniItemIds=[OmniItem(qty=1, barCode=null, itemNumber=4334891, speedCode=null, omniItemId=null, vendorNumber=null, modelId=null)], storeNumber=6335, city=Wilkesboro, stateCode=NC, zipCode=28697, country=US)",
+  "level": "ERROR",
+  "detailedErrorInfo": [
+    {
+      "businessCode": "BFF0004",
+      "description": "Invalid Bifrost response",
+      "statusCode": 500,
+      "businessReason": "bifrost",
+      "level": "FATAL",
+      "valid": true
+    }
+  ]
+}

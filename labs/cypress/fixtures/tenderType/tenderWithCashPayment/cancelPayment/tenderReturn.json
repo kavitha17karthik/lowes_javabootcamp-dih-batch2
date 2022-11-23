@@ -1,0 +1,5 @@
+{
+    "paymentMode":"CASH",
+    "amount":10,
+    "currencyCode":"USD"
+ }

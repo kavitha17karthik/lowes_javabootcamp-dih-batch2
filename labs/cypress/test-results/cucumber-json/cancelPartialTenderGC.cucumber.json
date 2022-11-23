@@ -1,0 +1,691 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Test Omnia SCO | Hybrid flow of CancelPartialTender GiftCard",
+    "line": 2,
+    "id": "test-omnia-sco-|-hybrid-flow-of-cancelpartialtender-giftcard",
+    "tags": [
+      {
+        "name": "@HYBRID",
+        "line": 1
+      }
+    ],
+    "uri": "cancelPartialTenderGC.feature",
+    "elements": [
+      {
+        "id": "test-omnia-sco-|-hybrid-flow-of-cancelpartialtender-giftcard;cancel-partial-tender-(gc+gc(zero))",
+        "keyword": "Scenario",
+        "line": 28,
+        "name": "Cancel Partial Tender (GC+GC(zero))",
+        "tags": [
+          {
+            "name": "@HYBRID",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "The user is on omnia sco page",
+            "result": {
+              "status": "passed",
+              "duration": 1772000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "User clicks on store sign in button",
+            "result": {
+              "status": "passed",
+              "duration": 218000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Verify if user is navigated to the store sign in page",
+            "result": {
+              "status": "passed",
+              "duration": 20000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "Enter the Login Credentials",
+            "result": {
+              "status": "passed",
+              "duration": 1819000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "Verify if user is navigated to start scanning page",
+            "result": {
+              "status": "passed",
+              "duration": 781000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "The User is on Start scanning with Menu page",
+            "result": {
+              "status": "passed",
+              "duration": 48000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "The user clicks on the Item Entry menu",
+            "result": {
+              "status": "passed",
+              "duration": 381000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "Validate the Item Entry Page",
+            "result": {
+              "status": "passed",
+              "duration": 228000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "itemNumber"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "1121"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "Click the Valid Item number in touchpad keyboard and Enter",
+            "result": {
+              "status": "passed",
+              "duration": 1941000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "Validate the add quantity page with user Message \"How many do you have?\"",
+            "result": {
+              "status": "passed",
+              "duration": 430000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "itemQty"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "1"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 17,
+            "name": "Click the quantity for the Item and Enter",
+            "result": {
+              "status": "passed",
+              "duration": 948000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "lineNumber",
+                      "bffLineNumber"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "1",
+                      "16594432802349881988"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 20,
+            "name": "Validate the item added in the cart",
+            "result": {
+              "status": "passed",
+              "duration": 359000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "Click on the Pay Now button",
+            "result": {
+              "status": "passed",
+              "duration": 419000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "BagQuantity"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "1"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "Enter the Bag quantity using touchpad and Click Enter",
+            "result": {
+              "status": "passed",
+              "duration": 798000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 29,
+            "name": "Validate the Tender Page GC",
+            "result": {
+              "status": "passed",
+              "duration": 926000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 30,
+            "name": "Authorization Loader get enabled for GC",
+            "result": {
+              "status": "passed",
+              "duration": 6307000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 31,
+            "name": "Validate gift card authorization for cancel partial tender",
+            "result": {
+              "status": "passed",
+              "duration": 160000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 32,
+            "name": "Validate tender activate for partial tender",
+            "result": {
+              "status": "passed",
+              "duration": 10709000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 33,
+            "name": "Validate the Tender Page GC for Partial Tender",
+            "result": {
+              "status": "passed",
+              "duration": 148000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 34,
+            "name": "Validate tender page for GC failure",
+            "result": {
+              "status": "passed",
+              "duration": 282000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 35,
+            "name": "User clicks on the Cancel Payment button on tender page",
+            "result": {
+              "status": "passed",
+              "duration": 5411000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 36,
+            "name": "Verify intervention screen",
+            "result": {
+              "status": "passed",
+              "duration": 224000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 37,
+            "name": "User scans associate QR code or login using the credentials",
+            "result": {
+              "status": "passed",
+              "duration": 5912000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 38,
+            "name": "Click on Cancel Payment button",
+            "result": {
+              "status": "passed",
+              "duration": 1211000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 39,
+            "name": "Validate Cancel Payment screen is displayed with refund  amount",
+            "result": {
+              "status": "passed",
+              "duration": 5420000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-omnia-sco-|-hybrid-flow-of-cancelpartialtender-giftcard;cancel-partial-tender--gc+lar(decline)",
+        "keyword": "Scenario",
+        "line": 41,
+        "name": "Cancel Partial Tender  GC+LAR(decline)",
+        "tags": [
+          {
+            "name": "@HYBRID",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "The user is on omnia sco page",
+            "result": {
+              "status": "passed",
+              "duration": 1522000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "User clicks on store sign in button",
+            "result": {
+              "status": "passed",
+              "duration": 181000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Verify if user is navigated to the store sign in page",
+            "result": {
+              "status": "passed",
+              "duration": 11000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "Enter the Login Credentials",
+            "result": {
+              "status": "passed",
+              "duration": 1717000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "Verify if user is navigated to start scanning page",
+            "result": {
+              "status": "passed",
+              "duration": 779000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "The User is on Start scanning with Menu page",
+            "result": {
+              "status": "passed",
+              "duration": 21000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "The user clicks on the Item Entry menu",
+            "result": {
+              "status": "passed",
+              "duration": 205000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "Validate the Item Entry Page",
+            "result": {
+              "status": "passed",
+              "duration": 201000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "itemNumber"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "1121"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "Click the Valid Item number in touchpad keyboard and Enter",
+            "result": {
+              "status": "passed",
+              "duration": 1878000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "Validate the add quantity page with user Message \"How many do you have?\"",
+            "result": {
+              "status": "passed",
+              "duration": 342000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "itemQty"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "1"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 17,
+            "name": "Click the quantity for the Item and Enter",
+            "result": {
+              "status": "passed",
+              "duration": 973000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "lineNumber",
+                      "bffLineNumber"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "1",
+                      "16594432802349881988"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 20,
+            "name": "Validate the item added in the cart",
+            "result": {
+              "status": "passed",
+              "duration": 387000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "Click on the Pay Now button",
+            "result": {
+              "status": "passed",
+              "duration": 469000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "BagQuantity"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "1"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "Enter the Bag quantity using touchpad and Click Enter",
+            "result": {
+              "status": "passed",
+              "duration": 774000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 42,
+            "name": "Validate the Tender Page GC",
+            "result": {
+              "status": "passed",
+              "duration": 664000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 43,
+            "name": "Authorization Loader get enabled for GC",
+            "result": {
+              "status": "passed",
+              "duration": 6154000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 44,
+            "name": "Validate gift card authorization for cancel partial tender",
+            "result": {
+              "status": "passed",
+              "duration": 104000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 45,
+            "name": "Validate tender activate for partial tender",
+            "result": {
+              "status": "passed",
+              "duration": 10726000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 46,
+            "name": "Validate the Tender Page GC for Partial Tender",
+            "result": {
+              "status": "passed",
+              "duration": 148000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 47,
+            "name": "Swipe LAR",
+            "result": {
+              "status": "passed",
+              "duration": 288000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 48,
+            "name": "Authorization Loader get enabled for LAR",
+            "result": {
+              "status": "passed",
+              "duration": 5274000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 49,
+            "name": "Validate tender page for LAR failure",
+            "result": {
+              "status": "passed",
+              "duration": 65000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 50,
+            "name": "User clicks on the Cancel Payment button on tender page",
+            "result": {
+              "status": "passed",
+              "duration": 5450000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 51,
+            "name": "Verify intervention screen",
+            "result": {
+              "status": "passed",
+              "duration": 267000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 52,
+            "name": "User scans associate QR code or login using the credentials",
+            "result": {
+              "status": "passed",
+              "duration": 6245000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 53,
+            "name": "Click on Cancel Payment button",
+            "result": {
+              "status": "passed",
+              "duration": 876000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 54,
+            "name": "Validate Cancel Payment screen is displayed with refund  amount",
+            "result": {
+              "status": "passed",
+              "duration": 5405000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

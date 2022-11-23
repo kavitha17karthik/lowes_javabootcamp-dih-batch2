@@ -1,0 +1,152 @@
+{
+  "status": "dataNeeded",
+  "nextAction": "continue",
+  "statusDetails": {
+    "msgType": "authorizedDetails",
+    "msg": "Authorized Card Details required",
+    "responseType": "jsonRqstDtls",
+    "dataRequired": [
+      {
+        "dataNeeded": "authorizedAmount",
+        "dataType": "string",
+        "optional": true
+      },
+      {
+        "dataNeeded": "cashback",
+        "dataType": "string",
+        "optional": true
+      },
+      {
+        "dataNeeded": "entryMethod",
+        "dataType": "string",
+        "optional": true
+      },
+      {
+        "dataNeeded": "paymentServiceFlag",
+        "dataType": "string",
+        "optional": true
+      },
+      {
+        "dataNeeded": "tenderCode",
+        "dataType": "string",
+        "optional": true
+      },
+      {
+        "dataNeeded": "token",
+        "dataType": "string",
+        "optional": true
+      },
+      {
+        "dataNeeded": "cvvResponse",
+        "dataType": "string",
+        "optional": true
+      },
+      {
+        "dataNeeded": "authorizationCode",
+        "dataType": "string",
+        "optional": true
+      },
+      {
+        "dataNeeded": "transactionId",
+        "dataType": "string",
+        "optional": true
+      },
+      {
+        "dataNeeded": "authSource",
+        "dataType": "string",
+        "optional": true
+      },
+      {
+        "dataNeeded": "netReturnCode",
+        "dataType": "string",
+        "optional": true
+      },
+      {
+        "dataNeeded": "retrievalReferenceNumber",
+        "dataType": "string",
+        "optional": true
+      },
+      {
+        "dataNeeded": "systemTraceAuditNumber",
+        "dataType": "string",
+        "optional": true
+      },
+      {
+        "dataNeeded": "validationCode",
+        "dataType": "string",
+        "optional": true
+      },
+      {
+        "dataNeeded": "guid",
+        "dataType": "string",
+        "optional": true
+      },
+      {
+        "dataNeeded": "posEntryMode",
+        "dataType": "string",
+        "optional": true
+      },
+      {
+        "dataNeeded": "emvApplicationLabel",
+        "dataType": "string",
+        "optional": true
+      },
+      {
+        "dataNeeded": "emvAid",
+        "dataType": "string",
+        "optional": true
+      },
+      {
+        "dataNeeded": "emvTvr",
+        "dataType": "string",
+        "optional": true
+      },
+      {
+        "dataNeeded": "emvTsi",
+        "dataType": "string",
+        "optional": true
+      },
+      {
+        "dataNeeded": "posIdentificationCode",
+        "dataType": "string",
+        "optional": true
+      },
+      {
+        "dataNeeded": "authDateTime",
+        "dataType": "string",
+        "optional": true
+      },
+      {
+        "dataNeeded": "cardLevel",
+        "dataType": "string",
+        "optional": true
+      },
+      {
+        "dataNeeded": "postalCode",
+        "dataType": "string",
+        "optional": true
+      },
+      {
+        "dataNeeded": "prepaidIndicator",
+        "dataType": "string",
+        "optional": true
+      },
+      {
+        "dataNeeded": "prepaidBalance",
+        "dataType": "string",
+        "optional": true
+      },
+      {
+        "dataNeeded": "avsResponse",
+        "dataType": "string",
+        "optional": true
+      },
+      {
+        "dataNeeded": "cardDeclined",
+        "dataType": "string",
+        "optional": true
+      }
+    ]
+  },
+  "requestId": "2"
+}

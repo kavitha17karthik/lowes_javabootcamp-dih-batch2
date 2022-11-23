@@ -1,0 +1,343 @@
+[
+  {
+    "description": "  As customer i should be able to perform a transaction with cash, and should be route though correct scenarios on cash shortage",
+    "keyword": "Feature",
+    "name": "MRV SCO | CR Cash shortage feature",
+    "line": 2,
+    "id": "mrv-sco-|-cr-cash-shortage-feature",
+    "tags": [
+      {
+        "name": "@HYBRID",
+        "line": 1
+      }
+    ],
+    "uri": "crCashWarnings.feature",
+    "elements": [
+      {
+        "id": "mrv-sco-|-cr-cash-shortage-feature;perform-a-cash-transaction-with-shortage",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Perform a cash transaction with shortage",
+        "tags": [
+          {
+            "name": "@HYBRID",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "We are on omnia sco page",
+            "result": {
+              "status": "passed",
+              "duration": 2988000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "Associate clicks on the sign button to login",
+            "result": {
+              "status": "passed",
+              "duration": 256000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "Verify if associate is navigated to the store sign in page",
+            "result": {
+              "status": "passed",
+              "duration": 21000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "Associate enters the Login Credentials successfully",
+            "result": {
+              "status": "passed",
+              "duration": 2781000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "Verify hardware check processing",
+            "result": {
+              "status": "passed",
+              "duration": 25000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "The customer is on Start scanning page",
+            "result": {
+              "status": "passed",
+              "duration": 853000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "itemNumber"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "1121"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "The customer scanned first item",
+            "result": {
+              "status": "passed",
+              "duration": 2150000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "Validate the add quantity page with user Message \"How many do you have?\"",
+            "result": {
+              "status": "passed",
+              "duration": 503000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "itemQty"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "2"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 18,
+            "name": "Enter item quantity and proceed",
+            "result": {
+              "status": "passed",
+              "duration": 983000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "lineNumber"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "1"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 21,
+            "name": "Validate item being added to the cart",
+            "result": {
+              "status": "passed",
+              "duration": 487000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "Click on the Pay Now button",
+            "result": {
+              "status": "passed",
+              "duration": 616000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 25,
+            "name": "Validate the Bag page",
+            "result": {
+              "status": "passed",
+              "duration": 801000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "BagQuantity"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "1"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 26,
+            "name": "Enter the Bag quantity using touch pad and Click Enter and proceed",
+            "result": {
+              "status": "passed",
+              "duration": 1371000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 29,
+            "name": "Validate cash tender page",
+            "result": {
+              "status": "passed",
+              "duration": 1473000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 30,
+            "name": "Enter cash amount \"20\"",
+            "result": {
+              "status": "passed",
+              "duration": 5219000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 31,
+            "name": "Validate amount entered in tender page",
+            "result": {
+              "status": "passed",
+              "duration": 10295000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 32,
+            "name": "Validate the receipt option",
+            "result": {
+              "status": "passed",
+              "duration": 90000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 33,
+            "name": "Select print receipt option",
+            "result": {
+              "status": "passed",
+              "duration": 1048000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 34,
+            "name": "Validate thank you message",
+            "result": {
+              "status": "passed",
+              "duration": 151000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 35,
+            "name": "Customer is on start scanning again",
+            "result": {
+              "status": "passed",
+              "duration": 5521000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 36,
+            "name": "Login into store mode",
+            "result": {
+              "status": "passed",
+              "duration": 4791000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 37,
+            "name": "Validate cash shortage warning \"10 dollar bills are running low. Replenishment is required soon.\"",
+            "result": {
+              "status": "passed",
+              "duration": 317000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 38,
+            "name": "Close the first banner",
+            "result": {
+              "status": "passed",
+              "duration": 317000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 39,
+            "name": "Validate cash overflow warning \"20 dollar bills are full. Cash collection required.\"",
+            "result": {
+              "status": "passed",
+              "duration": 114000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 40,
+            "name": "Exist from store mode",
+            "result": {
+              "status": "passed",
+              "duration": 363000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

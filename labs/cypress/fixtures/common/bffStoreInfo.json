@@ -1,0 +1,28 @@
+{
+  "storeInfo": {
+    "storeNumber": "6339",
+    "companyName": "LOWE'S HOME CENTERS, LLC",
+    "phone": "(336) 838-1500",
+    "businessDate": "07/27/2022",
+    "taxItemNumber": "38040",
+    "address1": "1041 CHARLOTTE HIGHWAY",
+    "address2": "",
+    "city": "Troutman",
+    "state": "NC",
+    "zip": "28166",
+    "llat": "37.55567694",
+    "llong": "-77.45672033",
+    "storeName": "Central Richmond Lowe's",
+    "managerName": "CHAD MADDOX",
+    "maxCopies": "1",
+    "somFlag": "0",
+    "deliveryTruckFlag": "0",
+    "reportsFlag": "1",
+    "myLowesFlag": "1",
+    "weeklyAdOn": "0",
+    "keywordSearch": "1",
+    "wayFindingOn": "0",
+    "defaultToBinLocation": "0",
+    "pickVerificationThreshold": "0"
+  }
+}

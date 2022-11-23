@@ -1,0 +1,10 @@
+{
+  "status": "Error",
+  "statusDetails": {
+    "error": {
+      "errorTxt": "Hardware Error",
+      "errorId": "REGISTER_ERROR",
+      "errorState": "retry"
+    }
+  }
+}

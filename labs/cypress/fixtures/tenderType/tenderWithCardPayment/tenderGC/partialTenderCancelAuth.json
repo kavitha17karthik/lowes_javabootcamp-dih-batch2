@@ -1,0 +1,8 @@
+{
+  "standardResponse": {
+    "status": "Declined",
+    "reversalId": "133338",
+    "reason": "No previous authorization to cancel",
+    "reasonCode": "REASONZZ"
+  }
+}

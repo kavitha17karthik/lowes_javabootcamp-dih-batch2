@@ -1,0 +1,25 @@
+{
+  "businessCode": "BFF0032",
+  "description": "Stores Internal error",
+  "statusCode": 400,
+  "businessReason": "Was the customer born on or before 09/23/2004",
+  "level": "ERROR",
+  "detailedErrorInfo": [
+    {
+      "businessCode": "BFF0032",
+      "description": "Age Restriction Message",
+      "statusCode": 400,
+      "businessReason": "bff",
+      "level": "FATAL",
+      "valid": true
+    }
+  ],
+  "response": {
+    "itemNumber": "1026685",
+    "productDescription": "FUSION ALL-IN-ONE Gloss Black Stainless Metallic Spray Paint and Primer In One (NET WT. 12-oz)",
+    "imageUrl": "https://images.lowes.com/product/converted/724504/724504027904.jpg",
+    "basePrice": 6.48,
+    "finalPrice": 6.48,
+    "retailPrice": 6.48
+  }
+}

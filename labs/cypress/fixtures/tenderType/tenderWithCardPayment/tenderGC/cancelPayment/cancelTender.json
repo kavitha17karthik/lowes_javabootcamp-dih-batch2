@@ -1,0 +1,14 @@
+{
+    "nextAction":"tenderStart",
+    "status":"tenderCancelled",
+    "statusDetails":{
+       "returnAmount":"0",
+       "TenderList":[
+          {
+             "TenderType":"Gift card",
+             "TenderAmt":"50"
+          }
+       ]
+    }
+ }
+ 

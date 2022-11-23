@@ -1,0 +1,126 @@
+{
+  "storeCart": {
+    "cartId": "6988479186628704811",
+    "itemCount": 1,
+    "cartSummary": {
+      "subTotal": 44.35,
+      "grandTotal": 44.97,
+      "totalTax": 2.84,
+      "totalSaving": 2.22,
+      "totalMarkDownSaving": 0.0,
+      "totalFees": 0.0,
+      "remainingOrderBalance": 0.0,
+      "totalUnlockSaving": 0.0,
+      "subTotalWithFees": 44.35,
+      "shippingTax": 0.0
+    },
+    "lowesCardOption": [
+      {
+        "lowesCardOptionName": "% OFF CREDIT PROMOTION-VAL PROP-US",
+        "typeId": "null",
+        "promoPercent": "5",
+        "tnCRequired": false,
+        "promoType": "LBA_PERCENT",
+        "promoGroupCode": "OrderLevelPromotion",
+        "selected": true,
+        "status": "APPLIED",
+        "identifier": "LBAPercentPromo",
+        "amountSaved": 2.22,
+        "promotionId": "CMS_LBA_1677",
+        "financeType": 0,
+        "custViewableDescShort": "% OFF CREDIT PROMOTION-VAL PROP-US"
+      }
+    ],
+    "customerSegments": ["REGULAR"],
+    "users": [
+      {
+        "poRequired": false,
+        "valPropEnabled": false,
+        "userType": "SHOPPER",
+        "taxExempt": false,
+        "taxExemptOptIn": true
+      }
+    ],
+    "payments": [
+      {
+        "paymentId": "1666183317043917779689",
+        "encryptedCardNumber": "6900253001009563052",
+        "amount": 44.97,
+        "cardType": "LBA",
+        "attachedTime": "2022-10-19T12:41:57Z",
+        "cardToken": "6900253001009563052",
+        "expirationMonth": 12,
+        "expirationYear": 2023,
+        "accountType": "CREDIT",
+        "track1Data": "B6900253001009563052^TEST, CSS^49127011000000749000000",
+        "track2Data": "6900253001009563052=491270110000749",
+        "poNumberRequired": true,
+        "addingCard": false,
+        "savedCard": false,
+        "cash": false
+      }
+    ],
+    "cartType": "SHOPPING",
+    "createdOn": "2022-10-19T12:41:17Z",
+    "cartItems": [
+      {
+        "cartItemId": "166618327787949681006",
+        "fulfillments": [
+          {
+            "fulfillmentId": "1",
+            "fulfillmentType": "CARRYWITH",
+            "fulfillmentNode": "6335",
+            "availabilityTime": "2022-10-19T12:41:27Z",
+            "availableStatus": true,
+            "selected": true
+          }
+        ],
+        "promotions": [],
+        "quantity": 1,
+        "taxExemptions": [],
+        "additionalServices": {},
+        "itemSummary": {
+          "discount": 0.0,
+          "markDownSaving": 0.0,
+          "subTotal": 44.35,
+          "subTotalAfterDisc": 44.35,
+          "salesTax": 2.84,
+          "fees": [],
+          "totalPrice": 47.19,
+          "unlockDiscount": 0.0,
+          "totalSavings": 2.22,
+          "totalSavingsByUnit": 2.22,
+          "serviceTotal": 0.0
+        },
+        "priceInfo": {
+          "prices": [
+            { "type": "RETAIL", "value": 44.35 },
+            { "type": "FINAL", "value": 44.35 },
+            { "type": "BASE", "value": 44.35 }
+          ],
+          "priceType": 1,
+          "totalPercentage": 0.0
+        },
+        "productInfo": {
+          "omniItemId": "3602798",
+          "productDescription": "7/16-in x 4-ft x 8-ft OSB Sheathing",
+          "shortDescription": "7/16 CAT OSB SHEATHING",
+          "itemNumber": "12212",
+          "model": "13287",
+          "itemType": "RGL",
+          "vendor": "132",
+          "imageUrl": "https://images.lowes.com/product/converted/088991/088991550315.jpg",
+          "brand": "Unbranded",
+          "interpackCode": "EA",
+          "confirmQuantity": false,
+          "unlockablePrice": true,
+          "unlockableQty": true,
+          "unlockNursery": false
+        },
+        "maxReturnableQty": 0,
+        "isLiveGood": false
+      }
+    ]
+  },
+  "fulfillmentConsolidation": {}
+}

@@ -1,0 +1,687 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "MRV SCO | API Failure Scenario",
+    "line": 2,
+    "id": "mrv-sco-|-api-failure-scenario",
+    "tags": [
+      {
+        "name": "@BFF",
+        "line": 1
+      }
+    ],
+    "uri": "apiFailure.feature",
+    "elements": [
+      {
+        "id": "mrv-sco-|-api-failure-scenario;approve-failure",
+        "keyword": "Scenario",
+        "line": 24,
+        "name": "Approve Failure",
+        "tags": [
+          {
+            "name": "@BFF",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "The user is on MRV sco page",
+            "result": {
+              "status": "passed",
+              "duration": 1842000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "User clicks on store sign in button",
+            "result": {
+              "status": "passed",
+              "duration": 273000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Verify if user is navigated to the store sign in page",
+            "result": {
+              "status": "passed",
+              "duration": 39000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "Enter the Login Credentials",
+            "result": {
+              "status": "passed",
+              "duration": 2321000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "Verify if user is navigated to start scanning page",
+            "result": {
+              "status": "passed",
+              "duration": 1291000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "The User is on Start scanning with Menu page",
+            "result": {
+              "status": "passed",
+              "duration": 48000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "The user clicks on the Item Entry menu",
+            "result": {
+              "status": "passed",
+              "duration": 280000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "Validate the Item Entry Page",
+            "result": {
+              "status": "passed",
+              "duration": 367000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "itemNumber"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "12212"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "Click the Valid Item number in touchpad keyboard and Enter",
+            "result": {
+              "status": "passed",
+              "duration": 2383000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "Validate the add quantity page with user Message \"How many do you have?\"",
+            "result": {
+              "status": "passed",
+              "duration": 1089000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "itemQty"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "1"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 17,
+            "name": "Click the quantity for the Item and Enter",
+            "result": {
+              "status": "passed",
+              "duration": 1053000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "bffLineNumber"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "16594432802349881988"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 20,
+            "name": "Validate the item added in the cart",
+            "result": {
+              "status": "passed",
+              "duration": 605000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 25,
+            "name": "Click on the Pay Now button",
+            "result": {
+              "status": "passed",
+              "duration": 807000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "Validate the Tender Page",
+            "result": {
+              "status": "passed",
+              "duration": 1476000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 27,
+            "name": "User Swipe VISA Card",
+            "result": {
+              "status": "passed",
+              "duration": 5436000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 28,
+            "name": "Approve Failure happens with Unknown Error Message",
+            "result": {
+              "status": "passed",
+              "duration": 645000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "mrv-sco-|-api-failure-scenario;activate-failure",
+        "keyword": "Scenario",
+        "line": 30,
+        "name": "Activate Failure",
+        "tags": [
+          {
+            "name": "@BFF",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "The user is on MRV sco page",
+            "result": {
+              "status": "passed",
+              "duration": 1821000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "User clicks on store sign in button",
+            "result": {
+              "status": "passed",
+              "duration": 252000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Verify if user is navigated to the store sign in page",
+            "result": {
+              "status": "passed",
+              "duration": 27000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "Enter the Login Credentials",
+            "result": {
+              "status": "passed",
+              "duration": 2279000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "Verify if user is navigated to start scanning page",
+            "result": {
+              "status": "passed",
+              "duration": 1208000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "The User is on Start scanning with Menu page",
+            "result": {
+              "status": "passed",
+              "duration": 44000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "The user clicks on the Item Entry menu",
+            "result": {
+              "status": "passed",
+              "duration": 297000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "Validate the Item Entry Page",
+            "result": {
+              "status": "passed",
+              "duration": 344000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "itemNumber"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "12212"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "Click the Valid Item number in touchpad keyboard and Enter",
+            "result": {
+              "status": "passed",
+              "duration": 2125000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "Validate the add quantity page with user Message \"How many do you have?\"",
+            "result": {
+              "status": "passed",
+              "duration": 1278000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "itemQty"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "1"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 17,
+            "name": "Click the quantity for the Item and Enter",
+            "result": {
+              "status": "passed",
+              "duration": 1145000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "bffLineNumber"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "16594432802349881988"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 20,
+            "name": "Validate the item added in the cart",
+            "result": {
+              "status": "passed",
+              "duration": 844000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 31,
+            "name": "Activation Failure",
+            "result": {
+              "status": "passed",
+              "duration": 880000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 32,
+            "name": "User Swipe Visa Card Activation Fails",
+            "result": {
+              "status": "passed",
+              "duration": 12000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 33,
+            "name": "Activate Failure happens with Unknown Error Message",
+            "result": {
+              "status": "passed",
+              "duration": 1929000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "mrv-sco-|-api-failure-scenario;deactivate-failure",
+        "keyword": "Scenario",
+        "line": 35,
+        "name": "Deactivate Failure",
+        "tags": [
+          {
+            "name": "@BFF",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "The user is on MRV sco page",
+            "result": {
+              "status": "passed",
+              "duration": 1184000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "User clicks on store sign in button",
+            "result": {
+              "status": "passed",
+              "duration": 254000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Verify if user is navigated to the store sign in page",
+            "result": {
+              "status": "passed",
+              "duration": 20000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "Enter the Login Credentials",
+            "result": {
+              "status": "passed",
+              "duration": 1935000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "Verify if user is navigated to start scanning page",
+            "result": {
+              "status": "passed",
+              "duration": 710000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "The User is on Start scanning with Menu page",
+            "result": {
+              "status": "passed",
+              "duration": 25000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "The user clicks on the Item Entry menu",
+            "result": {
+              "status": "passed",
+              "duration": 171000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "Validate the Item Entry Page",
+            "result": {
+              "status": "passed",
+              "duration": 195000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "itemNumber"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "12212"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "Click the Valid Item number in touchpad keyboard and Enter",
+            "result": {
+              "status": "passed",
+              "duration": 2027000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "Validate the add quantity page with user Message \"How many do you have?\"",
+            "result": {
+              "status": "passed",
+              "duration": 1191000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "itemQty"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "1"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 17,
+            "name": "Click the quantity for the Item and Enter",
+            "result": {
+              "status": "passed",
+              "duration": 1187000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "bffLineNumber"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "16594432802349881988"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 20,
+            "name": "Validate the item added in the cart",
+            "result": {
+              "status": "passed",
+              "duration": 1022000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 36,
+            "name": "Click on the Pay Now button",
+            "result": {
+              "status": "passed",
+              "duration": 812000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 37,
+            "name": "Validate the Tender Page",
+            "result": {
+              "status": "passed",
+              "duration": 1255000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 38,
+            "name": "Insert the card in the PED device and enter the Pin number",
+            "result": {
+              "status": "passed",
+              "duration": 5426000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 39,
+            "name": "Authorization Loader get enabled",
+            "result": {
+              "status": "passed",
+              "duration": 10319000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 40,
+            "name": "VISA CARD payment Fails",
+            "result": {
+              "status": "passed",
+              "duration": 5121000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 41,
+            "name": "Clicking backbutton deactivate and shows cart Page",
+            "result": {
+              "status": "passed",
+              "duration": 5678000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

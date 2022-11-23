@@ -1,0 +1,21 @@
+{
+  "status": "dataNeeded",
+  "nextAction": "continue",
+  "statusDetails": {
+    "msgType": "ConfirmEmail",
+    "msg": "CONFIRM CUSTOMER EMAIL - Y@HOTMAIL.COM",
+    "responseType": "jsonRqstDtls",
+    "selectionRequired": {
+      "dataNeeded": "ConfirmEmail",
+      "dataType": "string",
+      "minSelection": 1,
+      "maxSelection": 1,
+      "optional": false,
+      "choices": [
+        { "displayText": "YES", "value": "Y" },
+        { "displayText": "NO", "value": "N" }
+      ]
+    }
+  },
+  "requestId": "10"
+}

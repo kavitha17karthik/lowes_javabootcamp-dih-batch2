@@ -1,0 +1,20 @@
+{
+  "status": "dataNeeded",
+  "nextAction": "continue",
+  "statusDetails": {
+    "msgType": "PoNumber",
+    "msg": "Customer code",
+    "responseType": "jsonRqstDtls",
+    "dataRequired": [
+      {
+        "dataNeeded": "custcode",
+        "dataType": "string",
+        "optional": true,
+        "additionalDetails": {
+          "maxLen": 10
+        }
+      }
+    ]
+  },
+  "requestId": "4"
+}

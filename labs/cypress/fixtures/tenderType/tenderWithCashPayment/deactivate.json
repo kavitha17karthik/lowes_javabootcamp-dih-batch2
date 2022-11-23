@@ -1,0 +1,16 @@
+{
+  "paymentModes": [
+    {
+      "paymentMode": "CASH",
+      "status": true,
+      "amount": 0,
+      "currencyCode": "USD"
+    },
+    {
+      "paymentMode": "CARD",
+      "status": true,
+      "amount": 0,
+      "currencyCode": "USD"
+    }
+  ]
+}

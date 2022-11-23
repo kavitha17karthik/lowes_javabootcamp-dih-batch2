@@ -1,0 +1,67 @@
+{
+  "offset": 0,
+  "limit": 20,
+  "hasMore": false,
+  "pageCount": 1,
+  "data": [
+    {
+      "id": "3e7f8bf8-c77f-4f12-b703-a45f6722497b",
+      "profile": {
+        "lastName": "Madden",
+        "cadId": "390243137",
+        "legacy": false,
+        "created": "2022-09-20T16:26:13+00:00",
+        "firstName": "Adam",
+        "emailAddress": "Amadden031118@gmail.com",
+        "lastModified": "2022-09-20T16:26:14+00:00",
+        "phone": {
+          "number": "4792203612",
+          "type": "MOB",
+          "cadPhoneSeqId": "486455020",
+          "status": "verified",
+          "reclaimed": "false"
+        },
+        "custType": "PRO",
+        "industry": "Roofer",
+        "legacyId": 0,
+        "source": "lfp",
+        "termsAndConditionLastModified": "2022-09-20T16:26:13+00:00",
+        "isEpro": false,
+        "isTestUser": false,
+        "isUpgradedUser": false,
+        "isDigital": true,
+        "isSyncDownstream": false,
+        "isEmployee": false,
+        "isTCAccepted": true,
+        "isTermsAndConditionViewed": true
+      },
+      "address": {
+        "cadAddressSeqId": "474901455",
+        "addressType": "SB",
+        "line1": "708 Brook St",
+        "line2": "",
+        "city": "Gentry",
+        "state": "AR",
+        "postalCode": "72734",
+        "country": "US",
+        "phoneType": "MOB",
+        "phoneNumber": "4792203612",
+        "deliveryIndicator": false,
+        "residentialIndicator": false,
+        "preferred": false,
+        "validAddressIndicator": false,
+        "created": "2022-09-20T16:26:13+00:00",
+        "lastModified": "2022-09-20T16:26:14+00:00",
+        "phoneExtension": ""
+      },
+      "preferences": {
+        "organizationId": "c6048e39-02da-4edc-a275-9c05c90523af"
+      },
+      "orgDetails": {
+        "businessPhone": "4792203612",
+        "name": "Maddens Royal Roofing"
+      }
+    }
+  ],
+  "totalCount": 1
+}

@@ -1,0 +1,10 @@
+{
+  "customerList": {
+    "error": {
+      "errorTxt": "CUSTOMER NOT FOUND",
+      "errorId": "NO_CUST_FOUND",
+      "errorState": "retry"
+    }
+  },
+  "militaryIDCheckType": 1
+}
