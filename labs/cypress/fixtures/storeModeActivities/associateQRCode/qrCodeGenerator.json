@@ -1,5 +1,0 @@
-{
-  "status": "success",
-  "statusDetails": "User Authenticated",
-  "template": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><templates><template receiptType=\"QRCODE\"><emptyLine/><emptyLine/><qrCode>_QR_7o9yKrPHR++DoaF4uW/D9BfgKes2FNFP/xXpznwg8cw=</qrCode><emptyLine/><emptyLine/><line fontSize=\"large\" fontType=\"normal\">ATTENDANT S6408TU1</line><emptyLine/><emptyLine/><cutPaper/></template></templates>"
-}

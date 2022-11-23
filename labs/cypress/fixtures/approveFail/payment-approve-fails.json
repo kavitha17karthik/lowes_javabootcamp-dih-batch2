@@ -1,6 +1,0 @@
-{
-  "code": "PAYLOAD_INVALID",
-  "message": "Request payload is malformed or invalid"
-}
-
-{"code":"SPANID_INVALID","message":"Invalid or empty spand id"}

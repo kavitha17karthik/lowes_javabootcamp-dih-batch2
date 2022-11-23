@@ -1,7 +1,0 @@
-{
-  "statusDetails": {
-    "msg": "Sale has been canceled",
-    "msgType": "CANCEL_SALE"
-  },
-  "tenders": [{}]
-}

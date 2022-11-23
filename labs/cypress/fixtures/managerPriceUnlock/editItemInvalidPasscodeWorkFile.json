@@ -1,9 +1,0 @@
-{
-  "statusDetails": {
-    "error": {
-      "errorTxt": "card number not found",
-      "errorId": "LOGIN_ID_VALIDATION_ERROR",
-      "errorState": "retry"
-    }
-  }
-}

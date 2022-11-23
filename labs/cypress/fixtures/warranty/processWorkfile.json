@@ -1,9 +1,0 @@
-{
-  "statusDetails": {
-    "msgType": "warrantyNotification",
-    "msg": "",
-    "responseType": ""
-  },
-  "nextAction": "warranties",
-  "warrantyItemCount": 1
-}
