@@ -1,0 +1,36 @@
+@startuml
+actor customer as user
+participant UI as ui
+participant BFF as bff
+participant Genesis as genesis
+
+==start with BFF Controller==
+user->ui:  scanned item
+
+ui->genesis:  Inventory light lookup 
+genesis->ui:
+ui->ui: validate item type
+note right: the item is supproted in BFF 
+ui->bff: create / add cart with BFF
+
+user->ui:  scanned 2nd item
+ui->genesis:  Inventory light lookup 
+genesis->ui:
+ui->ui : validate item type
+note right: the item is NOT supproted in BFF 
+
+==cart flip==
+ui->ui : Switch cart
+ui->bff: Clear cart with BFF
+
+
+ui->genesis:  create cart with Genesis 
+ui->genesis:  add item1 to genesis cart
+ui->genesis:  add item2 to genesis cart
+
+==Payment==
+ui->Tachyon: Activate PED
+user->PED: swipe card
+PED->ui : get PED data
+
+ui->genesis: Authorize payment

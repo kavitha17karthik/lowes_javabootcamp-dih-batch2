@@ -1,0 +1,86 @@
+@startuml
+actor Customer as user
+participant UI as ui
+participant Tachyon as TDM
+participant Associate as associate
+participant Genesis as genesis
+
+== Payment Modes ['CASH', 'CARD'] SUCCESS ==
+user -> ui: click on paynow
+ui -> TDM: /activate/payment
+note right: activate all paymenet modes
+TDM --> ui: payment activation
+note right: response with all paymentModes status success 
+note left: UI is shown with Amount to be paid information 
+ui --> TDM: swipe/insert card
+
+
+== Payment Modes ['CASH', 'CARD'] CARD Activation failed ==
+user -> ui: click on paynow
+ui -> TDM: /activate/payment
+note right: activate all paymenet modes
+TDM --> ui: payment activation
+note right: response with all paymentModes CARD activation failed 
+ui --> user: Choose PaymentMode Cash Yes | No
+user --> ui: YES
+note right: on selecting YES UI then UI will move to tender with CASH
+user --> ui: NO
+note right: on selecting NO then UI will move to Intervention
+associate --> ui: Intervention Login - View Cart | Suspend Sale
+user --> ui: View Cart
+note right: View Cart will move from tendering to store mode cart view
+user --> ui: Suspend Sale
+note right: on selecting suspend sale, customer will receive the receipt with the barcode.
+note right: UI will got back to Start Scanning View
+
+
+== Payment Modes ['CASH', 'CARD'] CASH Activation failed ==
+user -> ui: click on paynow
+ui -> TDM: /activate/payment
+note right: activate all paymenet modes
+TDM --> ui: payment activation
+note right: response with all paymentModes CASH activation failed 
+ui --> user: Choose PaymentMode CARD Yes | No
+user --> ui: YES
+note right: on selecting YES UI then UI will move to tender with CARD
+user --> ui: NO
+note right: on selecting NO then UI will move to Intervention
+associate --> ui: Intervention Login - View Cart | Suspend Sale
+user --> ui: View Cart
+note right: View Cart will move from tendering to store mode cart view
+user --> ui: Suspend Sale
+note right: on selecting suspend sale, customer will receive the receipt with the barcode.
+note right: UI will got back to Start Scanning View
+
+
+== Payment Modes ['CASH'] CASH Activation failed ==
+user -> ui: click on paynow
+ui -> TDM: /activate/payment
+note right: activate all paymenet modes
+TDM --> ui: payment activation
+note right: response with paymentModes CASH activation failed
+ui --> user: Intervention for payment modes failure
+associate --> ui: Intervention login
+ui --> TDM: deactivate/payment
+ui --> geneis: action=contents 
+note right: Geneis will give partial tender paid info
+note right: deactivate/payment response will give the total amount paid
+note right: Partial tender amount shown with Got it Button
+associate --> ui: Got it button clicked
+note right: UI will move to Lane closed screen
+
+== Payment Modes ['CARD'] CARD Activation failed ==
+user -> ui: click on paynow
+ui -> TDM: /activate/payment
+note right: activate all paymenet modes
+TDM --> ui: payment activation
+note right: response with paymentModes CARD activation failed
+ui --> user: Intervention for payment modes failure
+associate --> ui: Intervention login
+ui --> TDM: deactivate/payment
+ui --> geneis: action=contents 
+note right: Geneis will give partial tender paid info
+note right: deactivate/payment response will give the total amount paid
+note right: Partial tender amount shown with Got it Button
+associate --> ui: Got it button clicked
+note right: UI will move to Lane closed screen

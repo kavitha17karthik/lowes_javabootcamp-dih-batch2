@@ -1,0 +1,24 @@
+@startuml
+actor Customer as Customer
+participant UI as ui
+participant DevicePlatform as tachyon
+
+
+alt enableLTR feature is off
+ui->ui: disbale LTR Feedback ;
+end
+alt enableLTR feature is ON 
+    alt Employee discount is Applied
+    ui->ui: disbale LTR Feedback ;
+    end
+    alt Cart value is less than or equal to four dollars?
+    ui->ui: disbale LTR Feedback ;
+    end
+    alt if Customer doesn't give Feedback
+    ui->tachyon: /register call
+    end
+    alt if Customer give Feedback
+    Customer->ui: gives feedback
+    ui->tachyon: /notify/ltr - paload - feedbackValue
+    end
+end

@@ -1,0 +1,68 @@
+@startuml
+actor Bob as user
+actor Associate as user1
+participant UI as ui
+participant Genesis as genesis
+
+
+user->ui: Select item entry
+user->ui: Enter item number or scanned item number
+
+ui->genesis: Add item call for manually entered Item
+note right: Call Add Item call 
+
+
+user->ui: Enter qty or update qty
+ui->genesis: Edit item call for added Item
+note right: Call Edit Item call 
+genesis->ui: Add Item in the cart
+
+user->ui: select item from the cart and Remove item
+user1->ui: Associate sigin for remove item intervention
+genesis->ui: authenticate associate 
+user->ui: select remove item 
+ui->genesis: Remove item call to remove item from the sale
+note right: Remove Item call 
+
+user->ui: update item price
+user1->ui: Associate signin in to store mode
+genesis->ui: authenticate associate 
+user1->ui: update price/ discount
+ui->genesis: edit item call
+note right: Edit Item call 
+genesis->ui: update item in the cart
+
+user->ui: Select my lowes look up
+user->ui: Enter phone number
+ui->genesis: my lowes lookup  call
+note right: my lowes lookup
+genesis->ui: customer list
+user-> ui: select customer from the list
+ui->genesis: Add Item call
+note right: Add my lowes customer to the cart
+
+user->ui: Select military Discount
+user->ui: Enter phone number
+ui->genesis: customer lookup  call
+note right: customer lookup
+genesis->ui: customer list
+user-> ui: select customer from the list
+ui->genesis: customer lookup call with selected customer
+note right: Military discount applied to the cart
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

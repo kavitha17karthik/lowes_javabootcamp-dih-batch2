@@ -1,0 +1,187 @@
+@startuml
+actor Customer as user
+actor Associate as asc
+box "UI layer interactions" #LightSteelBlue
+    participant UI as ui
+    participant State as state
+end box
+participant BFF as bff
+participant devicePlatform as dp
+participant PED as ped
+participant CashRecycler as cr
+
+== BFF cash/card tender flow ==
+group #LightYellow Cash only
+    user->ui: Clicks on paynow button to process for payment
+    ui-[#008000]>dp: get register call 
+    note right: fetch all status of register wit available payment modes
+    dp-[#008000]>ui: get rester info with available payment modes
+    ui-[#008000]>dp: activation call payment modes [cash]
+    alt activation sucess
+        dp-[#008000]>ui: respone with cash activation true
+        ui->ui: move to payment/tender screen
+        note right: Insert cash with payment details
+        user->cr: insert denominations(cash/coin)
+        cr->dp: cash inseration event
+        dp-[#355E3B]>ui: tender paid event
+        ui-[#008000]>bff: add payment
+        note right: attach cash payment info
+        bff-[#008000]>ui: send add payment info
+        ui-[#008000]>bff: get cart details check for remaining balance 0
+        note right: remainingOrderBalance 0 and changeDueAmount > 0
+        ui->state: fetch activated payment modes [cash]
+        ui-[#008000]>dp: deactivate payment modes [cash]
+        alt deactivation sucess 
+            dp-[#008000]>ui: deactivation sucess [cash: true] and total tendered amount
+            ui-[#008000]>dp: tender retun call
+            alt tender return success
+                dp-[#008000]>ui: tender retun call sucess
+                cr->dp: change dispense/ tender removal requested
+                note right: wait for tender_removed event/cash taken by customer
+                cr->dp: tender removed
+                dp-[#355E3B]>ui: socket event tender removed
+            else tender return failed
+                dp-[#008000]>ui: tender retun failed
+                ui->ui: manual return process
+            end
+        else deactivation failed
+            dp-[#red]>ui: deactivation failed [cash: false]
+            ui->ui: manual retun change due
+        end
+        ui-[#008000]>bff: complete call with print selection
+        bff-[#008000]>ui: sale complete sucess 
+        alt check the cr status (deative fail)
+            ui->ui: lane close
+        else start new trnasaciton
+            ui->ui: start scanning screen
+        end
+        ui-[#008000]>bff: complete call with print selection
+        ui->ui: start scanning
+    else activation failed
+        dp-[#red]>ui: respone with cash activation false
+        ui->ui: activation failed message and lane closed
+    end
+end
+
+group #LightYellow Cash and Card
+    user->ui: Clicks on paynow button to process for payment
+    ui-[#008000]>dp: get register call 
+    note right: fetch all status of register wit available payment modes
+    dp-[#008000]>ui: get register info with available payment modes [cash and card]
+    ui-[#008000]>dp: activation call payment modes [cash and card]
+    alt all sucess
+        dp-[#008000]>ui: all payment modes activated [cash: true, card: true]
+        ui->state: update the payment modes
+        ui->ui: move to payment screen with insert cash or swipe card
+        user->cr: inserted denominations
+        note right: partial payment
+        cr->dp: tender insert event
+        dp-[#355E3B]>ui: tender_paid event
+        ui-[#008000]>bff: add payment with payment info
+        bff-[#008000]>ui: payment info detials
+        ui-[#008000]>bff: get cart details
+        bff-[#008000]>ui: card detials with remainingOrderBalance > 0
+        ui->ui: show remaining balance in tender page with insert cash or swipe card
+        user->ped: swipe card credit
+        dp-[#008000]>ui: tender_capture event
+        ui-[#008000]>dp: payment suspend call with payment modes[cash & card]
+        dp-[#008000]>ui: payment mode suspended [cash: true, card: true]
+        ui-[#008000]>bff: add payment with card details attached
+        bff-[#008000]>ui: sucess
+        ui-[#008000]>bff: get card call to fetch cart info
+        ui-[#008000]>dp: approve call
+        dp-[#355E3B]>ui: tender_paid socket event
+        ui-[#008000]>bff: authorization call
+        bff-[#008000]>ui: auth sucess
+        ui-[#008000]>bff: get card call to fetch cart info remain order balance 0
+        note right: continue with complete call not changes here
+     else
+    end
+    alt card only
+        dp-[#008000]>ui: card activated [card: true, cash: false]
+        ui->ui: show message on available payment option
+        note right: show message unable to activate cash proceed with card payment
+        user->ui: select yes to continue with card payment
+        note right: continue with card payment no changes here
+     else 
+    end
+    alt cash only
+        dp-[#008000]>ui: cash activated [cash: true, card: false]
+        ui->ui: show message on available payment option
+        note right: show message unable to activate card proceed with cash payment
+        user->ui: select yes to continue with cash payment and move to payment screen
+        ui->ui: show total amount with insert cash message
+        user->cr: insert denominations(cash/coin)
+        cr->dp: cash inseration event
+        dp-[#355E3B]>ui: tender paid event
+        ui-[#008000]>bff: add payment
+        note right: attach cash payment info
+        bff-[#008000]>ui: send add payment info
+        ui-[#008000]>bff: get cart details check for remaining balance > 0
+        note right: remainingOrderBalance > 0
+        ui->ui: show remain order balance
+        cr->dp: cash inseration event
+        dp-[#355E3B]>ui: tender paid event
+        ui-[#008000]>bff: add payment
+        note right: attach cash payment info
+        bff-[#008000]>ui: send add payment info
+        ui-[#008000]>bff: get cart details check for remaining balance 0
+        note right: remainingOrderBalance  0 and changeDue > 0
+        ui->state: fetch activated payment modes [cash]
+        ui-[#008000]>dp: deactivate payment modes [cash]
+        dp-[#008000]>ui: deactivation sucess [cash: true]
+        ui-[#008000]>dp: tender retun call
+        alt tender return success
+            dp-[#008000]>ui: tender retun call sucess
+            cr->dp: change dispense/ tender removal requested
+            note right: wait for tender_removed event/cash taken by customer
+            cr->dp: tender removed
+            dp-[#355E3B]>ui: socket event tender removed
+        else tender return failed
+            dp-[#008000]>ui: tender retun failed
+            ui->ui: manual return process
+        end
+        ui-[#008000]>bff: complete call with print selection
+        bff-[#008000]>ui: sale complete sucess
+     else
+    end
+    alt all failed
+     else
+    end
+end
+group #LightYellow Cash back
+    user->ui: Clicks on paynow button to process for payment
+    ui-[#008000]>dp: get register call 
+    note right: fetch all status of register wit available payment modes
+    dp-[#008000]>ui: get register info with available payment modes [cash and card]
+    ui-[#008000]>dp: activation call payment modes [cash and card]
+    dp-[#008000]>ui: activation sucess with all payment modes [cash : true, card: true]
+    user->ped: insert card
+    dp-[#008000]>ui: tender_capture event
+    ui-[#008000]>dp: payment suspend call with payment modes[cash & card]
+    dp-[#008000]>ui: payment mode suspended [cash: true, card: true]
+    ui-[#008000]>bff: add payment with card details attached along with cash back
+    bff-[#008000]>ui: sucess
+    ui-[#008000]>bff: get card call to fetch cart info
+    ui-[#008000]>dp: approve call
+    dp-[#355E3B]>ui: tender_paid socket event
+    ui-[#008000]>bff: authorization call
+    bff-[#008000]>ui: auth sucess
+    ui-[#008000]>bff: get card call to fetch cart info remain order balance 0 and change due/cash back
+    ui-[#008000]>dp: deactivate payment modes [cash]
+    dp-[#008000]>ui: deactivation sucess [cash: true]
+    ui-[#008000]>dp: tender retun call
+    alt tender return success
+        dp-[#008000]>ui: tender retun call sucess
+        cr->dp: change dispense/ tender removal requested
+        note right: wait for tender_removed event/cash taken by customer
+        cr->dp: tender removed
+        dp-[#355E3B]>ui: socket event tender removed
+    else tender return failed
+        dp-[#008000]>ui: tender retun failed
+        ui->ui: manual return process
+    end
+    ui-[#008000]>bff: complete call with print selection
+    bff-[#008000]>ui: sale complete sucess
+end
+@enduml
